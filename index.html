@@ -2,16 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Warface Preset Generator (Client-side)</title>
+  <title>Warface Preset Generator (JSON)</title>
   <style>
-    /* Обёртка, чтобы сделать 2 колонки */
+    /* 1) Оформление в 2 колонки */
     .layout-container {
       display: flex;
       gap: 16px;
-      align-items: flex-start; /* верхняя граница совмещена */
+      align-items: flex-start;
     }
-
-    /* Левая колонка (список + пагинация) */
     .left-panel {
       width: 500px;
       min-width: 350px;
@@ -27,9 +25,7 @@
       margin-bottom: 8px;
     }
     .weapon-list ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
+      margin: 0; padding: 0; list-style-type: none;
     }
     .weapon-list li {
       margin: 4px 0;
@@ -45,8 +41,7 @@
     .pagination-controls button {
       margin: 0 8px;
     }
-
-    /* Правая колонка (выбранные и результат) */
+    /* 2) Правая колонка */
     .right-panel {
       width: 400px;
     }
@@ -62,35 +57,30 @@
     .selectedWeaponItem:hover {
       background: #f2f2f2;
     }
-
     textarea {
       width: 100%;
       height: 300px;
     }
-
-    /* Доп. стили для выбора внешности */
     .appearance-block {
       margin-bottom: 16px;
     }
   </style>
 </head>
 <body>
-<h1>Warface Preset Generator (Client-side)</h1>
+<h1>Warface Preset Generator (JSON, всё в одном)</h1>
 
 <div class="layout-container">
-  <!-- Левая колонка: поиск + список + пагинация -->
+  <!-- Левая колонка: поиск, список, пагинация -->
   <div class="left-panel">
     <div class="search-box">
-      <label for="searchInput">Поиск оружия:</label><br/>
-      <input type="text" id="searchInput" placeholder="Введите название" style="width: 100%;" />
+      <label for="searchInput">Поиск оружия:</label><br>
+      <input type="text" id="searchInput" placeholder="Введите название" style="width:100%;">
     </div>
-
     <div class="weapon-list-container">
       <div class="weapon-list">
         <ul id="weaponsUl"></ul>
       </div>
     </div>
-
     <div class="pagination-controls">
       <button id="prevPageBtn">« Предыдущая</button>
       <span id="pageInfo"></span>
@@ -98,13 +88,12 @@
     </div>
   </div>
 
-  <!-- Правая колонка: выбранные + внешний вид + генерация -->
+  <!-- Правая колонка: внешность, выбранные предметы, генерация -->
   <div class="right-panel">
-    <!-- Добавим блок выбора внешности -->
     <div class="appearance-block">
       <h3>Выбор внешности</h3>
       <select id="appearanceSelect">
-        <!-- Заполним вариантами из skinsData -->
+        <!-- наполним при загрузке -->
       </select>
     </div>
 
@@ -116,324 +105,169 @@
     <button id="generateBtn">Сгенерировать пресет</button>
 
     <h3>Результат:</h3>
-    <textarea id="resultArea" readonly></textarea><br/>
+    <textarea id="resultArea" readonly></textarea><br>
     <button id="downloadBtn">Скачать</button>
   </div>
 </div>
 
 
 <script>
-/*************************************************************
- * Глобальные переменные (как раньше в Node, но теперь в браузере)
- *************************************************************/
-let weaponsData = [];      // сюда загрузим все оружия (xml -> JS)
-let skinsData = [];        // сюда загрузим все внешности (xml -> JS)
-let localizationMap = {};  // общий словарь локализаций (из items.txt/xml)
+// ************************************************************
+// Глобальные переменные
+// ************************************************************
+let weaponsData = [];      // из all_weapons.json
+let skinsData = [];        // из all_skins.json
+let localizationMap = {};  // из items.txt (при желании)
 
-let filteredWeapons = [];  // отфильтрованный список по поиску
-let selectedWeapons = [];  // выбранные предметы
-let selectedAppearance = ''; // выбранная внешность
+let filteredWeapons = [];
+let selectedWeapons = [];
+let selectedAppearance = '';
 
-// Пагинация
 let currentPage = 1;
-const itemsPerPage = 20; // по 20 штук на странице
+const itemsPerPage = 20;
 
-/*************************************************************
- * 1) При загрузке страницы:
- *    - грузим локализации (items.txt)
- *    - грузим список файлов оружия из weapons_manifest.json, парсим все
- *    - грузим список файлов внешностей из skins_manifest.json, парсим все
- *    - затем рендерим
- *************************************************************/
+// ************************************************************
+// При загрузке страницы
+// ************************************************************
 window.addEventListener('load', async () => {
-  // 1. Загрузка локализаций
-  await loadLocalization('data/items.txt'); // или 'data/items.xml'
+  try {
+    // (1) Локализация (необязательно)
+    await loadLocalization('data/items.txt');
 
-  // 2. Загружаем weapon-XML-файлы (через manifest)
-  weaponsData = await loadAllWeapons('data/weapons_manifest.json');
+    // (2) Оружие
+    const wResp = await fetch('data/all_weapons.json');
+    weaponsData = await wResp.json();
 
-  // 3. Загружаем skin-XML-файлы (через manifest)
-  skinsData = await loadAllSkins('data/skins_manifest.json');
+    // (3) Внешности
+    const sResp = await fetch('data/all_skins.json');
+    if (sResp.ok) {
+      skinsData = await sResp.json();
+    }
 
-  // Заполняем выпадающий список внешностей
-  populateAppearanceSelect();
+    // (4) Заполняем селект внешностей
+    populateAppearanceSelect();
 
-  // Инициализируем список оружия (поиск + пагинация)
-  filteredWeapons = [...weaponsData];
-  currentPage = 1;
-  renderWeaponList();
+    // (5) Готовим список оружий к отображению
+    filteredWeapons = [...weaponsData];
+    currentPage = 1;
+    renderWeaponList();
+  } catch (err) {
+    console.error('Ошибка при загрузке данных:', err);
+  }
 });
 
-/*************************************************************
- * 2) Загрузка локализаций (items.txt/xml)
- *    - Пример простого XML парсинга средствами DOMParser
- *************************************************************/
-async function loadLocalization(filePath) {
+// ************************************************************
+// 1) Загрузка локализации (если нужно)
+// ************************************************************
+async function loadLocalization(path) {
   try {
-    const response = await fetch(filePath);
-    const textData = await response.text();
-
-    // Парсим как XML
-    const parser = new DOMParser();
-    const xmlDoc = parser.parseFromString(textData, 'text/xml');
-
-    // Вдруг нет корневого элемента <Items> — проверим
-    const itemsRoot = xmlDoc.getElementsByTagName('Items')[0];
-    if (!itemsRoot) {
-      console.warn('No <Items> root in localization file.');
+    const resp = await fetch(path);
+    if (!resp.ok) {
+      console.warn('Не нашёл локализацию:', path);
       return;
     }
-
-    // Пробегаемся по <Item>
+    const textData = await resp.text();
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(textData, 'text/xml');
+    const itemsRoot = xmlDoc.getElementsByTagName('Items')[0];
+    if (!itemsRoot) {
+      console.warn('Нет <Items> в файле локализации');
+      return;
+    }
     const itemNodes = itemsRoot.getElementsByTagName('Item');
-    for (let i = 0; i < itemNodes.length; i++) {
-      const itemEl = itemNodes[i];
-      const name = itemEl.getAttribute('name');
-      const localizedName = itemEl.getAttribute('item_name') || name;
-      localizationMap[name] = localizedName;
+    for (let i=0; i<itemNodes.length; i++) {
+      const el = itemNodes[i];
+      const name = el.getAttribute('name');
+      const locName = el.getAttribute('item_name') || name;
+      localizationMap[name] = locName;
 
       // skins
-      const skinsEls = itemEl.getElementsByTagName('skins');
-      if (skinsEls.length > 0) {
+      const skinsEls = el.getElementsByTagName('skins');
+      if (skinsEls.length>0) {
         const skinEls = skinsEls[0].getElementsByTagName('skin');
-        for (let j = 0; j < skinEls.length; j++) {
+        for (let j=0; j<skinEls.length; j++) {
           const sEl = skinEls[j];
           const sName = sEl.getAttribute('name');
-          const sLocalized = sEl.getAttribute('skin_name') || sName;
-          localizationMap[sName] = sLocalized;
+          const sLoc = sEl.getAttribute('skin_name') || sName;
+          localizationMap[sName] = sLoc;
         }
       }
-
       // attachments
-      const attEls = itemEl.getElementsByTagName('attachments');
-      if (attEls.length > 0) {
+      const attEls = el.getElementsByTagName('attachments');
+      if (attEls.length>0) {
         const aEls = attEls[0].getElementsByTagName('attachment');
-        for (let j = 0; j < aEls.length; j++) {
+        for (let j=0; j<aEls.length; j++) {
           const aEl = aEls[j];
           const aName = aEl.getAttribute('name');
-          const aLocalized = aEl.getAttribute('attachment_name') || aName;
-          localizationMap[aName] = aLocalized;
+          const aLoc = aEl.getAttribute('attachment_name') || aName;
+          localizationMap[aName] = aLoc;
         }
       }
     }
-
     console.log('Localization loaded:', localizationMap);
   } catch (err) {
-    console.error('Error loading localization:', err);
+    console.warn('Ошибка loadLocalization:', err);
   }
 }
 
-/*************************************************************
- * 3) Загрузка и парсинг ВСЕХ weapon-XML из weapons_manifest.json
- *************************************************************/
-async function loadAllWeapons(manifestPath) {
-  const result = [];
-
-  try {
-    // 1) Скачиваем список файлов из манифеста
-    const manifestRes = await fetch(manifestPath);
-    const manifestList = await manifestRes.json();
-
-    // 2) Для каждого пути — грузим XML и парсим
-    for (const xmlFilePath of manifestList) {
-      const weaponObj = await parseWeaponXML(xmlFilePath);
-      if (weaponObj) {
-        result.push(weaponObj);
-      }
-    }
-  } catch (err) {
-    console.error('Error loading weapons:', err);
-  }
-
-  return result;
-}
-
-/*************************************************************
- * parseWeaponXML: парсим один weapon.xml
- *************************************************************/
-async function parseWeaponXML(xmlFilePath) {
-  try {
-    const res = await fetch(xmlFilePath);
-    const xmlText = await res.text();
-
-    const parser = new DOMParser();
-    const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-
-    const itemEl = xmlDoc.getElementsByTagName('item')[0];
-    if (!itemEl) return null;
-
-    const weaponName = itemEl.getAttribute('name') || 'unknown_weapon';
-    const category = itemEl.getAttribute('category') || 'unknown_category';
-
-    // Ищем ammo_type (<param name="ammo_type" value="..."/>)
-    let ammoType = '';
-    const fireparams = itemEl.getElementsByTagName('fireparams');
-    if (fireparams.length > 0) {
-      const fire = fireparams[0].getElementsByTagName('fire');
-      if (fire.length > 0) {
-        const paramList = fire[0].getElementsByTagName('param');
-        for (let i = 0; i < paramList.length; i++) {
-          const p = paramList[i];
-          const pName = p.getAttribute('name');
-          if (pName === 'ammo_type') {
-            ammoType = p.getAttribute('value') || '';
-          }
-        }
-      }
-    }
-
-    // Скины (<skins><material name="..."/>)
-    let skins = [];
-    const skinsEls = itemEl.getElementsByTagName('skins');
-    if (skinsEls.length > 0) {
-      const matEls = skinsEls[0].getElementsByTagName('material');
-      for (let i = 0; i < matEls.length; i++) {
-        const nameAttr = matEls[i].getAttribute('name');
-        if (nameAttr) {
-          skins.push(nameAttr);
-        }
-      }
-    }
-
-    // Модули (attachments) — <sockets><socket><support name="...">
-    let attachments = [];
-    const socketsEls = itemEl.getElementsByTagName('sockets');
-    if (socketsEls.length > 0) {
-      const socketList = socketsEls[0].getElementsByTagName('socket');
-      for (let i = 0; i < socketList.length; i++) {
-        const supList = socketList[i].getElementsByTagName('support');
-        for (let j = 0; j < supList.length; j++) {
-          const supName = supList[j].getAttribute('name');
-          if (supName) {
-            attachments.push(supName);
-          }
-        }
-      }
-    }
-
-    return {
-      name: weaponName,
-      category,
-      ammoType,
-      skins,
-      attachments
-    };
-  } catch (err) {
-    console.error('Error in parseWeaponXML:', err);
-    return null;
-  }
-}
-
-/*************************************************************
- * 4) Загрузка и парсинг ВСЕХ skin-XML из skins_manifest.json
- *************************************************************/
-async function loadAllSkins(manifestPath) {
-  const result = [];
-
-  try {
-    const manifestRes = await fetch(manifestPath);
-    const manifestList = await manifestRes.json();
-
-    for (const xmlFilePath of manifestList) {
-      const skinObj = await parseSkinXML(xmlFilePath);
-      if (skinObj) {
-        result.push(skinObj);
-      }
-    }
-  } catch (err) {
-    console.error('Error loading skins:', err);
-  }
-
-  return result;
-}
-
-/*************************************************************
- * parseSkinXML
- *************************************************************/
-async function parseSkinXML(xmlFilePath) {
-  try {
-    const res = await fetch(xmlFilePath);
-    const xmlText = await res.text();
-
-    const parser = new DOMParser();
-    const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-
-    // Предположим, что там <GameItem name="..."/>
-    const gameItemEl = xmlDoc.getElementsByTagName('GameItem')[0];
-    if (!gameItemEl) return null;
-
-    const skinName = gameItemEl.getAttribute('name') || 'unknown_skin';
-
-    return {
-      name: skinName
-      // по желанию - ещё какие-то поля
-    };
-  } catch (err) {
-    console.error('Error in parseSkinXML:', err);
-    return null;
-  }
-}
-
-/*************************************************************
- * 5) populateAppearanceSelect
- *************************************************************/
+// ************************************************************
+// 2) populateAppearanceSelect
+// ************************************************************
 function populateAppearanceSelect() {
-  const select = document.getElementById('appearanceSelect');
-  select.innerHTML = '';
+  const sel = document.getElementById('appearanceSelect');
+  sel.innerHTML = '';
 
   // Опция «Без внешности»
-  const noneOption = document.createElement('option');
-  noneOption.value = '';
-  noneOption.textContent = 'Без внешности';
-  select.appendChild(noneOption);
+  const noneOpt = document.createElement('option');
+  noneOpt.value = '';
+  noneOpt.textContent = 'Без внешности';
+  sel.appendChild(noneOpt);
 
-  skinsData.forEach(sk => {
+  skinsData.forEach(skin => {
+    // skin.name = "soldier_fbs_samurai01", например
     const opt = document.createElement('option');
-    opt.value = sk.name; // originalName
-    // Попробуем дать локализованное имя, если есть
-    const localized = localizationMap[sk.name] || sk.name;
-    opt.textContent = localized;
-    select.appendChild(opt);
+    opt.value = skin.name;
+    const locName = localizationMap[skin.name] || skin.name;
+    opt.textContent = locName;
+    sel.appendChild(opt);
   });
 
-  // По умолчанию нет внешности
+  sel.value = '';
   selectedAppearance = '';
-  select.value = selectedAppearance;
-
-  // Событие выбора
-  select.addEventListener('change', () => {
-    selectedAppearance = select.value;
+  sel.addEventListener('change', () => {
+    selectedAppearance = sel.value; 
   });
 }
 
-/*************************************************************
- * 6) Поиск «на лету»
- *************************************************************/
+// ************************************************************
+// 3) Поиск «на лету»
+// ************************************************************
 document.getElementById('searchInput').addEventListener('input', () => {
   const query = document.getElementById('searchInput').value.toLowerCase();
   filteredWeapons = weaponsData.filter(w => {
     const locName = localizationMap[w.name] || w.name;
     return (
-      locName.toLowerCase().includes(query) ||
-      w.name.toLowerCase().includes(query)
+      w.name.toLowerCase().includes(query) ||
+      (w.category || '').toLowerCase().includes(query) ||
+      locName.toLowerCase().includes(query)
     );
   });
   currentPage = 1;
   renderWeaponList();
 });
 
-/*************************************************************
- * 7) Рендер списка оружия (с пагинацией)
- *************************************************************/
+// ************************************************************
+// 4) Рендер списка оружий (пагинация)
+// ************************************************************
 function renderWeaponList() {
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const itemsToShow = filteredWeapons.slice(startIndex, endIndex);
-
   const ul = document.getElementById('weaponsUl');
   ul.innerHTML = '';
 
-  itemsToShow.forEach(w => {
+  const startIndex = (currentPage - 1)*itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const pageItems = filteredWeapons.slice(startIndex, endIndex);
+
+  pageItems.forEach(w => {
     const li = document.createElement('li');
     const locName = localizationMap[w.name] || w.name;
     li.textContent = `${locName} (${w.name})`;
@@ -441,59 +275,50 @@ function renderWeaponList() {
     ul.appendChild(li);
   });
 
-  const pageInfo = document.getElementById('pageInfo');
   const totalPages = Math.ceil(filteredWeapons.length / itemsPerPage);
-  pageInfo.textContent = `Стр. ${currentPage} из ${totalPages}`;
+  document.getElementById('pageInfo').textContent = `Стр. ${currentPage} из ${totalPages}`;
 }
 
-// Кнопки «предыдущая / следующая страница»
 document.getElementById('prevPageBtn').addEventListener('click', () => {
-  if (currentPage > 1) {
+  if (currentPage>1) {
     currentPage--;
     renderWeaponList();
   }
 });
 document.getElementById('nextPageBtn').addEventListener('click', () => {
   const totalPages = Math.ceil(filteredWeapons.length / itemsPerPage);
-  if (currentPage < totalPages) {
+  if (currentPage<totalPages) {
     currentPage++;
     renderWeaponList();
   }
 });
 
-/*************************************************************
- * 8) Добавить предмет в выбранные
- *************************************************************/
+// ************************************************************
+// 5) Добавить предмет
+// ************************************************************
 function addSelectedWeapon(w) {
-  // Если не хотите дубликаты, проверяем:
-  /*
-  const already = selectedWeapons.find(x => x.name === w.name);
-  if (already) return;
-  */
-
-  // Превратим "bare" weapon в объект, где есть place for selectedSkinId
+  // Создаём объект для выбора
   const newItem = {
     originalName: w.name,
     localizedName: localizationMap[w.name] || w.name,
     ammoType: w.ammoType,
-    attachments: (w.attachments || []).map(attId => ({
-      id: attId,
-      localizedName: localizationMap[attId] || attId
+    attachments: (w.attachments||[]).map(a => ({
+      id: a,
+      localizedName: localizationMap[a] || a
     })),
-    skins: (w.skins || []).map(sId => ({
-      id: sId,
-      localizedName: localizationMap[sId] || sId
+    skins: (w.skins||[]).map(s => ({
+      id: s,
+      localizedName: localizationMap[s] || s
     })),
-    selectedSkinId: ""
+    selectedSkinId: ''
   };
-
   selectedWeapons.push(newItem);
   renderSelectedWeapons();
 }
 
-/*************************************************************
- * 9) Отрисовать выбранные предметы
- *************************************************************/
+// ************************************************************
+// 6) Отрисовать выбранные предметы
+// ************************************************************
 function renderSelectedWeapons() {
   const container = document.getElementById('selectedContainer');
   container.innerHTML = '';
@@ -507,34 +332,35 @@ function renderSelectedWeapons() {
     title.innerHTML = `<strong>${sw.localizedName}</strong>`;
     div.appendChild(title);
 
-    // Выбор скина (если есть)
-    if (sw.skins.length > 0) {
-      const skinLabel = document.createElement('label');
-      skinLabel.textContent = 'Скин: ';
-      const skinSelect = document.createElement('select');
+    // Выбор скина (для оружия)
+    if (sw.skins && sw.skins.length>0) {
+      const label = document.createElement('label');
+      label.textContent = 'Скин: ';
+      const sel = document.createElement('select');
 
-      // Опция «Без скина»
-      const defOpt = document.createElement('option');
-      defOpt.value = '';
-      defOpt.textContent = 'Без скина';
-      skinSelect.appendChild(defOpt);
+      // «Без скина»
+      const noneOpt = document.createElement('option');
+      noneOpt.value = '';
+      noneOpt.textContent = 'Без скина';
+      sel.appendChild(noneOpt);
 
-      sw.skins.forEach(s => {
+      sw.skins.forEach(sObj => {
         const opt = document.createElement('option');
-        opt.value = s.id;
-        opt.textContent = s.localizedName;
-        skinSelect.appendChild(opt);
+        opt.value = sObj.id;
+        opt.textContent = sObj.localizedName;
+        sel.appendChild(opt);
       });
 
-      skinSelect.value = sw.selectedSkinId;
-      skinSelect.onchange = (e) => {
+      sel.value = sw.selectedSkinId;
+      sel.onchange = (e) => {
         sw.selectedSkinId = e.target.value;
       };
-      skinLabel.appendChild(skinSelect);
-      div.appendChild(skinLabel);
+      label.appendChild(sel);
+      div.appendChild(document.createElement('br'));
+      div.appendChild(label);
     }
 
-    // Кнопка «Удалить»
+    // Кнопка удалить
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Удалить';
     removeBtn.style.marginLeft = '16px';
@@ -548,44 +374,41 @@ function renderSelectedWeapons() {
   });
 }
 
-/*************************************************************
- * 10) Сгенерировать Lua-пресет
- *************************************************************/
+// ************************************************************
+// 7) Сгенерировать Lua
+// ************************************************************
 document.getElementById('generateBtn').addEventListener('click', () => {
-  const preset = generatePresetLua();
-  document.getElementById('resultArea').value = preset;
+  const script = generatePresetLua();
+  document.getElementById('resultArea').value = script;
 });
 
 function generatePresetLua() {
   // Внешность
-  const appearanceLine = selectedAppearance
-    ? `{name = "${selectedAppearance}"},`
-    : '';
+  const appearanceLine = selectedAppearance ? `{ name = "${selectedAppearance}" },` : '';
 
-  // armor
   const armorBlock = `
-  armor =
+  armor = 
   {
     ${appearanceLine}
   },`;
 
-  // items
+  // Items
   let itemsStr = `  items = {\n`;
   selectedWeapons.forEach(sw => {
     itemsStr += `    { name = "${sw.originalName}", skin = "${sw.selectedSkinId}" },\n`;
   });
   itemsStr += `  },`;
 
-  // attachments
+  // Attachments
   let attachmentsStr = `  attachments = {\n`;
   selectedWeapons.forEach(sw => {
-    (sw.attachments || []).forEach(att => {
-      attachmentsStr += `    { name = "${att.id}", attachTo = "${sw.originalName}" },\n`;
+    (sw.attachments||[]).forEach(a => {
+      attachmentsStr += `    { name = "${a.id}", attachTo = "${sw.originalName}" },\n`;
     });
   });
   attachmentsStr += `  },`;
 
-  // ammo
+  // Ammo
   let ammoStr = `  ammo = {\n`;
   selectedWeapons.forEach(sw => {
     if (sw.ammoType) {
@@ -594,7 +417,7 @@ function generatePresetLua() {
   });
   ammoStr += `  },`;
 
-  const luaScript = `
+  return `
 local inventory = {
 ${armorBlock}
 ${itemsStr}
@@ -603,25 +426,22 @@ ${ammoStr}
 }
 return inventory
 `.trim();
-
-  return luaScript;
 }
 
-/*************************************************************
- * 11) «Скачать» полученный Lua-текст
- *************************************************************/
+// ************************************************************
+// 8) Скачать результат
+// ************************************************************
 document.getElementById('downloadBtn').addEventListener('click', () => {
   const text = document.getElementById('resultArea').value;
-  const blob = new Blob([text], { type: 'text/plain' });
+  const blob = new Blob([text], {type:'text/plain'});
   const url = URL.createObjectURL(blob);
-
   const link = document.createElement('a');
   link.href = url;
   link.download = 'warface_preset.lua';
   link.click();
-
   URL.revokeObjectURL(url);
 });
 </script>
+
 </body>
 </html>
