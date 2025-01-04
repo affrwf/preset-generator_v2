@@ -1,123 +1,363 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Warface Preset Generator (JSON)</title>
+  <meta charset="UTF-8">
+  <title>MVM Preset Generator</title>
   <style>
-    /* 1) Оформление в 2 колонки */
-    .layout-container {
+    /* Общий сброс и фон */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f5f6;
+      color: #333;
+    }
+    /* Шапка */
+    header {
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 16px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #444;
+    }
+    /* Две основные колонки: левая (результат и генерация) и правая (генератор) */
+    .container {
+    display: flex;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+    align-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: stretch;
+    }
+    /* Левая колонка */
+    .left-column {
+      flex: 1;
       display: flex;
+      flex-direction: column;
       gap: 16px;
-      align-items: flex-start;
     }
-    .left-panel {
-      width: 500px;
-      min-width: 350px;
+    /* Карточка (блок) с белым фоном */
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 16px;
     }
+    .card h2 {
+      margin-top: 0;
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #444;
+    }
+    .card h3 {
+      margin: 0 0 8px 0;
+      color: #666;
+    }
+    /* Поле textarea */
+    textarea {
+      width: 100%;
+      height: 200px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px;
+      resize: vertical;
+      font-family: monospace;
+      margin-top: 8px;
+    }
+    /* Кнопки */
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 14px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    /* Правая колонка */
+    .right-column {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    /* Карточка генератора */
+    .generator-card {
+      flex: 1;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+    }
+    /* Блок поиска */
     .search-box {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
+    .search-box input {
+      width: 100%;
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    /* Список оружий */
     .weapon-list-container {
+      border: 1px solid #ccc;
+      border-radius: 4px;
       max-height: 450px;
       overflow-y: auto;
-      border: 1px solid #ccc;
-      padding: 8px;
       margin-bottom: 8px;
     }
     .weapon-list ul {
-      margin: 0; padding: 0; list-style-type: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
     .weapon-list li {
-      margin: 4px 0;
+      padding: 6px 10px;
       cursor: pointer;
+      transition: background 0.2s;
+      border-bottom: 1px solid #eee;
+    }
+    .weapon-list li:last-child {
+      border-bottom: none;
     }
     .weapon-list li:hover {
-      background: #f8f8f8;
+      background: #f2f2f2;
     }
     .pagination-controls {
       text-align: center;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
     .pagination-controls button {
-      margin: 0 8px;
+      margin: 0 6px;
+      padding: 6px 12px;
     }
-    /* 2) Правая колонка */
-    .right-panel {
-      width: 400px;
-    }
-    .selected-weapons {
+    /* Блок внешности и выбранных */
+    .appearance-block, .selected-weapons {
       margin-bottom: 16px;
     }
+    select {
+      width: 100%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    /* Выбранные предметы */
     .selectedWeaponItem {
       border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fafafa;
       padding: 8px;
       margin: 8px 0;
-      background: #fafafa;
     }
     .selectedWeaponItem:hover {
       background: #f2f2f2;
     }
-    textarea {
-      width: 100%;
-      height: 300px;
+    /* Кнопки: основной стиль */
+    .btn-primary {
+      background: #007BFF;
+      color: #fff;
     }
-    .appearance-block {
-      margin-bottom: 16px;
+    .btn-download {
+      background: #28a745;
+      color: #fff;
+    }
+    /* Блок случайной генерации */
+    .random-block p {
+      margin: 6px 0 12px 0;
+      color: #777;
+    }
+    .range-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .range-row label {
+      width: 40px;
+      margin-right: 8px;
+      text-align: right;
+      color: #555;
+    }
+    .range-row input {
+      width: 50px;
+      text-align: center;
+      margin-right: 4px;
+      padding: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .random-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .random-buttons button {
+      background: #17a2b8;
+      color: #fff;
+      font-weight: bold;
+      padding: 6px 14px;
+      flex: 1;
+      text-align: center;
+    }
+    .random-buttons button:hover {
+      background: #138496;
+    }
+    /* Кнопка удалить у выбранных предметов */
+    .selectedWeaponItem button {
+      margin-left: 8px;
+      background: #dc3545;
+      color: #fff;
+      padding: 4px 8px;
     }
   </style>
 </head>
 <body>
-<h1>Warface Preset Generator (JSON, всё в одном)</h1>
 
-<div class="layout-container">
-  <!-- Левая колонка: поиск, список, пагинация -->
-  <div class="left-panel">
-    <div class="search-box">
-      <label for="searchInput">Поиск оружия:</label><br>
-      <input type="text" id="searchInput" placeholder="Введите название" style="width:100%;">
+<header>
+  <h1>Warface Preset Generator</h1>
+</header>
+
+<div class="container">
+  <!-- Левая колонка: Результат (Lua) + Случайная генерация -->
+  <div class="left-column">
+    <!-- Результат (Lua) -->
+    <div class="card">
+      <h2>Результат (Lua)</h2>
+      <textarea id="resultArea" readonly></textarea>
     </div>
-    <div class="weapon-list-container">
-      <div class="weapon-list">
-        <ul id="weaponsUl"></ul>
+    <!-- Случайная генерация -->
+    <div class="card random-block">
+      <h2>Случайная генерация</h2>
+      <p>Эта штука позволяет генерировать случайные пресеты с актуальной метой и случайной внешностью на каждый класс.</p> 
+      <p>Вводишь в минимальную ячейку айди предмета (например 56) и у тебя будут пресеты только с теми пушками, чьи айди больше 56.</p>
+
+      <div class="range-row">
+        <label>AR:</label>
+        <input id="arMin" type="text" placeholder="мин" />
+        -
+        <input id="arMax" type="text" placeholder="макс" />
       </div>
-    </div>
-    <div class="pagination-controls">
-      <button id="prevPageBtn">« Предыдущая</button>
-      <span id="pageInfo"></span>
-      <button id="nextPageBtn">Следующая »</button>
+      <div class="range-row">
+        <label>MG:</label>
+        <input id="mgMin" type="text" placeholder="мин" />
+        -
+        <input id="mgMax" type="text" placeholder="макс" />
+      </div>
+      <div class="range-row">
+        <label>SHG:</label>
+        <input id="shgMin" type="text" placeholder="мин" />
+        -
+        <input id="shgMax" type="text" placeholder="макс" />
+      </div>
+      <div class="range-row">
+        <label>SMG:</label>
+        <input id="smgMin" type="text" placeholder="мин" />
+        -
+        <input id="smgMax" type="text" placeholder="макс" />
+      </div>
+      <div class="range-row">
+        <label>SR:</label>
+        <input id="srMin" type="text" placeholder="мин" />
+        -
+        <input id="srMax" type="text" placeholder="макс" />
+      </div>
+      <div class="range-row">
+        <label>PT:</label>
+        <input id="ptMin" type="text" placeholder="мин" />
+        -
+        <input id="ptMax" type="text" placeholder="макс" />
+      </div>
+
+      <div class="random-buttons">
+        <button id="randomR">Штурмовик</button>
+        <button id="randomM">Медик</button>
+        <button id="randomE">Инженер</button>
+        <button id="randomS">Снайпер</button>
+      </div>
     </div>
   </div>
 
-  <!-- Правая колонка: внешность, выбранные предметы, генерация -->
-  <div class="right-panel">
+  <!-- Правая колонка: Генератор -->
+  <div class="right-column">
+    <div class="generator-card">
+      <!-- Поиск оружия -->
+      <div class="search-box">
+        <label for="searchInput">Поиск оружия:</label><br>
+        <input type="text" id="searchInput" placeholder="Введите название">
+      </div>
+
+      <!-- Список оружий + пагинация -->
+      <div class="weapon-list-container">
+        <div class="weapon-list">
+          <ul id="weaponsUl"></ul>
+        </div>
+      </div>
+      <div class="pagination-controls">
+        <button id="prevPageBtn">« Предыдущая</button>
+        <span id="pageInfo"></span>
+        <button id="nextPageBtn">Следующая »</button>
+      </div>
+    </div>
+  </div>
+  <div class="generator-card" style="margin-top:16px;">
+    <!-- Выбор внешности -->
     <div class="appearance-block">
-      <h3>Выбор внешности</h3>
+      <h2>Выбор внешности</h2>
       <select id="appearanceSelect">
-        <!-- наполним при загрузке -->
+        <!-- заполняется динамически -->
       </select>
     </div>
-
+    <!-- Выбранные предметы -->
     <div class="selected-weapons">
-      <h3>Выбранные предметы</h3>
+      <h2>Выбранные предметы</h2>
       <div id="selectedContainer"></div>
     </div>
-
-    <button id="generateBtn">Сгенерировать пресет</button>
-
-    <h3>Результат:</h3>
-    <textarea id="resultArea" readonly></textarea><br>
-    <button id="downloadBtn">Скачать</button>
+  
+    <!-- Кнопки генерации/скачивания -->
+    <div style="display:flex; gap:8px;">
+      <button id="generateBtn" class="btn-primary">Сгенерировать пресет</button>
+      <button id="downloadBtn" class="btn-download">Скачать пресет</button>
+    </div>
   </div>
 </div>
 
-
 <script>
-// ************************************************************
-// Глобальные переменные
-// ************************************************************
-let weaponsData = [];      // из all_weapons.json
-let skinsData = [];        // из all_skins.json
-let localizationMap = {};  // из items.txt (при желании)
+// -------------------------------------------------------------
+// getSkinLocalizedName
+// -------------------------------------------------------------
+function getSkinLocalizedName(weaponName, skinId, locMap) {
+  // Извлекаем "чистый" ID оружия (до первого '_')
+  const baseWeaponId = weaponName.split('_')[0];
+
+  if (skinId === 'default') {
+    return locMap["default"] || "Базовый камуфляж";
+  }
+  if (skinId === 'gold01') {
+    return locMap["gold01"] || "Золотой камуфляж";
+  }
+
+  const fullKey = baseWeaponId + '_' + skinId + 'skin_shop';
+  return locMap[fullKey] || skinId;
+}
+
+
+// -------------------------------------------------------------
+// Глобальные
+// -------------------------------------------------------------
+let weaponsData = [];
+let skinsData = [];
+let localizationMap = {};
 
 let filteredWeapons = [];
 let selectedWeapons = [];
@@ -126,44 +366,45 @@ let selectedAppearance = '';
 let currentPage = 1;
 const itemsPerPage = 20;
 
-// ************************************************************
-// При загрузке страницы
-// ************************************************************
+// -------------------------------------------------------------
+// При загрузке
+// -------------------------------------------------------------
 window.addEventListener('load', async () => {
   try {
-    // (1) Локализация (необязательно)
     await loadLocalization('data/items.txt');
 
-    // (2) Оружие
-    const wResp = await fetch('data/all_weapons.json');
-    weaponsData = await wResp.json();
+    const wRes = await fetch('data/all_weapons.json');
+    weaponsData = await wRes.json();
 
-    // (3) Внешности
-    const sResp = await fetch('data/all_skins.json');
-    if (sResp.ok) {
-      skinsData = await sResp.json();
+    const sRes = await fetch('data/all_skins.json');
+    if (sRes.ok) {
+      skinsData = await sRes.json();
     }
 
-    // (4) Заполняем селект внешностей
     populateAppearanceSelect();
 
-    // (5) Готовим список оружий к отображению
     filteredWeapons = [...weaponsData];
     currentPage = 1;
     renderWeaponList();
+
+    // Слушатели на кнопки "Случайная генерация"
+    document.getElementById('randomR').addEventListener('click', () => generateRandomPreset('R'));
+    document.getElementById('randomM').addEventListener('click', () => generateRandomPreset('M'));
+    document.getElementById('randomE').addEventListener('click', () => generateRandomPreset('E'));
+    document.getElementById('randomS').addEventListener('click', () => generateRandomPreset('S'));
   } catch (err) {
-    console.error('Ошибка при загрузке данных:', err);
+    console.error('Ошибка загрузки данных:', err);
   }
 });
 
-// ************************************************************
-// 1) Загрузка локализации (если нужно)
-// ************************************************************
+// -------------------------------------------------------------
+// Загрузка локализации
+// -------------------------------------------------------------
 async function loadLocalization(path) {
   try {
     const resp = await fetch(path);
     if (!resp.ok) {
-      console.warn('Не нашёл локализацию:', path);
+      console.warn('Нет локализации:', path);
       return;
     }
     const textData = await resp.text();
@@ -171,9 +412,10 @@ async function loadLocalization(path) {
     const xmlDoc = parser.parseFromString(textData, 'text/xml');
     const itemsRoot = xmlDoc.getElementsByTagName('Items')[0];
     if (!itemsRoot) {
-      console.warn('Нет <Items> в файле локализации');
+      console.warn('Нет <Items> root');
       return;
     }
+
     const itemNodes = itemsRoot.getElementsByTagName('Item');
     for (let i=0; i<itemNodes.length; i++) {
       const el = itemNodes[i];
@@ -181,7 +423,7 @@ async function loadLocalization(path) {
       const locName = el.getAttribute('item_name') || name;
       localizationMap[name] = locName;
 
-      // skins
+      // скины
       const skinsEls = el.getElementsByTagName('skins');
       if (skinsEls.length>0) {
         const skinEls = skinsEls[0].getElementsByTagName('skin');
@@ -204,27 +446,24 @@ async function loadLocalization(path) {
         }
       }
     }
-    console.log('Localization loaded:', localizationMap);
   } catch (err) {
-    console.warn('Ошибка loadLocalization:', err);
+    console.warn('Ошибка при loadLocalization:', err);
   }
 }
 
-// ************************************************************
-// 2) populateAppearanceSelect
-// ************************************************************
+// -------------------------------------------------------------
+// populateAppearanceSelect
+// -------------------------------------------------------------
 function populateAppearanceSelect() {
   const sel = document.getElementById('appearanceSelect');
   sel.innerHTML = '';
 
-  // Опция «Без внешности»
   const noneOpt = document.createElement('option');
   noneOpt.value = '';
   noneOpt.textContent = 'Без внешности';
   sel.appendChild(noneOpt);
 
   skinsData.forEach(skin => {
-    // skin.name = "soldier_fbs_samurai01", например
     const opt = document.createElement('option');
     opt.value = skin.name;
     const locName = localizationMap[skin.name] || skin.name;
@@ -232,23 +471,23 @@ function populateAppearanceSelect() {
     sel.appendChild(opt);
   });
 
-  sel.value = '';
   selectedAppearance = '';
+  sel.value = '';
   sel.addEventListener('change', () => {
-    selectedAppearance = sel.value; 
+    selectedAppearance = sel.value;
   });
 }
 
-// ************************************************************
-// 3) Поиск «на лету»
-// ************************************************************
+// -------------------------------------------------------------
+// Поиск «на лету»
+// -------------------------------------------------------------
 document.getElementById('searchInput').addEventListener('input', () => {
   const query = document.getElementById('searchInput').value.toLowerCase();
   filteredWeapons = weaponsData.filter(w => {
     const locName = localizationMap[w.name] || w.name;
     return (
       w.name.toLowerCase().includes(query) ||
-      (w.category || '').toLowerCase().includes(query) ||
+      (w.category||'').toLowerCase().includes(query) ||
       locName.toLowerCase().includes(query)
     );
   });
@@ -256,14 +495,14 @@ document.getElementById('searchInput').addEventListener('input', () => {
   renderWeaponList();
 });
 
-// ************************************************************
-// 4) Рендер списка оружий (пагинация)
-// ************************************************************
+// -------------------------------------------------------------
+// renderWeaponList (пагинация)
+// -------------------------------------------------------------
 function renderWeaponList() {
   const ul = document.getElementById('weaponsUl');
   ul.innerHTML = '';
 
-  const startIndex = (currentPage - 1)*itemsPerPage;
+  const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const pageItems = filteredWeapons.slice(startIndex, endIndex);
 
@@ -280,35 +519,35 @@ function renderWeaponList() {
 }
 
 document.getElementById('prevPageBtn').addEventListener('click', () => {
-  if (currentPage>1) {
+  if (currentPage > 1) {
     currentPage--;
     renderWeaponList();
   }
 });
 document.getElementById('nextPageBtn').addEventListener('click', () => {
   const totalPages = Math.ceil(filteredWeapons.length / itemsPerPage);
-  if (currentPage<totalPages) {
+  if (currentPage < totalPages) {
     currentPage++;
     renderWeaponList();
   }
 });
 
-// ************************************************************
-// 5) Добавить предмет
-// ************************************************************
+// -------------------------------------------------------------
+// addSelectedWeapon
+// -------------------------------------------------------------
 function addSelectedWeapon(w) {
-  // Создаём объект для выбора
   const newItem = {
     originalName: w.name,
     localizedName: localizationMap[w.name] || w.name,
+    category: w.category,
     ammoType: w.ammoType,
-    attachments: (w.attachments||[]).map(a => ({
-      id: a,
-      localizedName: localizationMap[a] || a
+    attachments: (w.attachments||[]).map(aId => ({
+      id: aId,
+      localizedName: localizationMap[aId] || aId
     })),
-    skins: (w.skins||[]).map(s => ({
-      id: s,
-      localizedName: localizationMap[s] || s
+    skins: (w.skins||[]).map(sId => ({
+      id: sId,
+      localizedName: getSkinLocalizedName(w.name, sId, localizationMap)
     })),
     selectedSkinId: ''
   };
@@ -316,9 +555,9 @@ function addSelectedWeapon(w) {
   renderSelectedWeapons();
 }
 
-// ************************************************************
-// 6) Отрисовать выбранные предметы
-// ************************************************************
+// -------------------------------------------------------------
+// renderSelectedWeapons
+// -------------------------------------------------------------
 function renderSelectedWeapons() {
   const container = document.getElementById('selectedContainer');
   container.innerHTML = '';
@@ -327,18 +566,16 @@ function renderSelectedWeapons() {
     const div = document.createElement('div');
     div.className = 'selectedWeaponItem';
 
-    // Название
     const title = document.createElement('div');
-    title.innerHTML = `<strong>${sw.localizedName}</strong>`;
+    title.innerHTML = `<strong>${sw.localizedName}</strong> [${sw.originalName}]`;
     div.appendChild(title);
 
-    // Выбор скина (для оружия)
+    // если есть скины
     if (sw.skins && sw.skins.length>0) {
       const label = document.createElement('label');
       label.textContent = 'Скин: ';
       const sel = document.createElement('select');
 
-      // «Без скина»
       const noneOpt = document.createElement('option');
       noneOpt.value = '';
       noneOpt.textContent = 'Без скина';
@@ -352,7 +589,7 @@ function renderSelectedWeapons() {
       });
 
       sel.value = sw.selectedSkinId;
-      sel.onchange = (e) => {
+      sel.onchange = e => {
         sw.selectedSkinId = e.target.value;
       };
       label.appendChild(sel);
@@ -360,10 +597,9 @@ function renderSelectedWeapons() {
       div.appendChild(label);
     }
 
-    // Кнопка удалить
+    // Кнопка «Удалить»
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Удалить';
-    removeBtn.style.marginLeft = '16px';
     removeBtn.onclick = () => {
       selectedWeapons.splice(index, 1);
       renderSelectedWeapons();
@@ -374,41 +610,45 @@ function renderSelectedWeapons() {
   });
 }
 
-// ************************************************************
-// 7) Сгенерировать Lua
-// ************************************************************
+// -------------------------------------------------------------
+// generateBtn -> сгенерировать пресет
+// -------------------------------------------------------------
 document.getElementById('generateBtn').addEventListener('click', () => {
-  const script = generatePresetLua();
-  document.getElementById('resultArea').value = script;
+  doGenerate();
 });
 
+function doGenerate() {
+  const lua = generatePresetLua();
+  document.getElementById('resultArea').value = lua;
+}
+
+// -------------------------------------------------------------
+// generatePresetLua
+// -------------------------------------------------------------
 function generatePresetLua() {
-  // Внешность
-  const appearanceLine = selectedAppearance ? `{ name = "${selectedAppearance}" },` : '';
+  const appearanceLine = selectedAppearance 
+    ? `{ name = "${selectedAppearance}" },`
+    : '';
 
   const armorBlock = `
-  armor = 
-  {
+  armor = {
     ${appearanceLine}
   },`;
 
-  // Items
   let itemsStr = `  items = {\n`;
   selectedWeapons.forEach(sw => {
     itemsStr += `    { name = "${sw.originalName}", skin = "${sw.selectedSkinId}" },\n`;
   });
   itemsStr += `  },`;
 
-  // Attachments
   let attachmentsStr = `  attachments = {\n`;
   selectedWeapons.forEach(sw => {
-    (sw.attachments||[]).forEach(a => {
+    (sw.attachments || []).forEach(a => {
       attachmentsStr += `    { name = "${a.id}", attachTo = "${sw.originalName}" },\n`;
     });
   });
   attachmentsStr += `  },`;
 
-  // Ammo
   let ammoStr = `  ammo = {\n`;
   selectedWeapons.forEach(sw => {
     if (sw.ammoType) {
@@ -428,9 +668,9 @@ return inventory
 `.trim();
 }
 
-// ************************************************************
-// 8) Скачать результат
-// ************************************************************
+// -------------------------------------------------------------
+// downloadBtn -> скачать
+// -------------------------------------------------------------
 document.getElementById('downloadBtn').addEventListener('click', () => {
   const text = document.getElementById('resultArea').value;
   const blob = new Blob([text], {type:'text/plain'});
@@ -441,7 +681,120 @@ document.getElementById('downloadBtn').addEventListener('click', () => {
   link.click();
   URL.revokeObjectURL(url);
 });
-</script>
 
+// -------------------------------------------------------------
+// Случайная генерация
+// -------------------------------------------------------------
+function generateRandomPreset(classChar) {
+  // Сбрасываем
+  selectedWeapons = [];
+  selectedAppearance = '';
+
+  // Основные категории
+  let primaryCats = [];
+  if (classChar === 'R') {
+    primaryCats = ['ar','mg'];
+  } else if (classChar === 'M') {
+    primaryCats = ['shg'];
+  } else if (classChar === 'E') {
+    primaryCats = ['smg'];
+  } else if (classChar === 'S') {
+    primaryCats = ['sr'];
+  }
+
+  // Основное оружие
+  const mainList = weaponsData.filter(w => {
+    if (!primaryCats.includes(w.category)) return false;
+    return isWithinRange(w.name, w.category);
+  });
+  const mainWeapon = randomItem(mainList);
+  if (mainWeapon) {
+    addSelectedWeapon(mainWeapon);
+    setRandomSkinForLast();
+  }
+
+  // Пистолет (pt)
+  const pistolList = weaponsData.filter(w => {
+    if (w.category !== 'pt') return false;
+    return isWithinRange(w.name, 'pt');
+  });
+  const pistol = randomItem(pistolList);
+  if (pistol) {
+    addSelectedWeapon(pistol);
+    setRandomSkinForLast();
+  }
+
+  // Нож (kn) — без диапазонов (если хотите, добавьте knMin/knMax)
+  const knifeList = weaponsData.filter(w => w.category === 'kn');
+  const knife = randomItem(knifeList);
+  if (knife) {
+    addSelectedWeapon(knife);
+    setRandomSkinForLast();
+  }
+
+  // Внешность (исключаем те, где classes === 'MERS')
+  const skinCandidates = skinsData.filter(sk => {
+    // Учитываем только те, у которых classes есть, включает classChar,
+    // и при этом не равно 'MERS'
+    if (!sk.classes) return false;
+    if (sk.classes === 'MERS') return false; // пропускаем
+    return sk.classes.includes(classChar);
+  });
+  const randomSkin = randomItem(skinCandidates);
+  if (randomSkin) {
+    selectedAppearance = randomSkin.name;
+  }
+
+  // Перерисовываем и генерим
+  renderSelectedWeapons();
+  doGenerate();
+}
+
+// -------------------------------------------------------------
+// setRandomSkinForLast
+// -------------------------------------------------------------
+function setRandomSkinForLast() {
+  if (!selectedWeapons.length) return;
+  const last = selectedWeapons[selectedWeapons.length - 1];
+  if (!last.skins || last.skins.length === 0) return;
+  const rnd = randomItem(last.skins);
+  if (rnd) {
+    last.selectedSkinId = rnd.id;
+  }
+}
+
+// -------------------------------------------------------------
+// isWithinRange (с учётом min/max полей)
+// -------------------------------------------------------------
+function isWithinRange(weaponName, category) {
+  const minInput = document.getElementById(category + 'Min');
+  const maxInput = document.getElementById(category + 'Max');
+  if (!minInput || !maxInput) return true;
+
+  const minVal = parseInt(minInput.value);
+  const maxVal = parseInt(maxInput.value);
+  const hasMin = !isNaN(minVal);
+  const hasMax = !isNaN(maxVal);
+
+  if (!hasMin && !hasMax) return true;
+
+  const match = weaponName.match(/\d+$/);
+  if (!match) return false;
+
+  const num = parseInt(match[0]);
+  if (hasMin && num < minVal) return false;
+  if (hasMax && num > maxVal) return false;
+  return true;
+}
+
+// -------------------------------------------------------------
+// randomItem
+// -------------------------------------------------------------
+function randomItem(arr) {
+  if (!arr || arr.length === 0) return null;
+  const idx = Math.floor(Math.random() * arr.length);
+  return arr[idx];
+}
+</script>
 </body>
 </html>

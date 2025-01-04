@@ -14,10 +14,14 @@ const { parseStringPromise } = require('xml2js');
 const WEAPONS_FOLDER = path.join(__dirname, 'data', 'weapons');
 const OUTPUT_JSON = path.join(__dirname, 'data', 'all_weapons.json');
 
-async function parseWeaponFile(filePath) {
+async function parseWeaponFile(filePath, fileName) {
   // Считываем XML
   const xmlData = fs.readFileSync(filePath, 'utf8');
   const xmlObj = await parseStringPromise(xmlData);
+
+  // Извлекаем категорию из имени файла
+  const categoryMatch = fileName.match(/^[^\d]+/);
+  const category = categoryMatch ? categoryMatch[0] : 'unknown_category';
 
   // Предположим, корень <item ... >
   // Смотрим, есть ли xmlObj.item
@@ -26,7 +30,6 @@ async function parseWeaponFile(filePath) {
 
   // Вытаскиваем что-нибудь (имя, категория, ammoType, список скинов)
   const name = item.$.name || 'unknown_name';
-  const category = item.$.category || 'unknown_category';
 
   // Ищем ammo_type (примерно как раньше)
   let ammoType = '';
@@ -69,12 +72,12 @@ async function parseWeaponFile(filePath) {
   // Собираем объект
   return {
     name,
-   // category,
+    category,
     ammoType,
     skins,
     attachments,
     //rpm,
-   // damage
+    //damage,
   };
 }
 
@@ -85,7 +88,7 @@ async function main() {
   const results = [];
   for (const file of files) {
     const fullPath = path.join(WEAPONS_FOLDER, file);
-    const wObj = await parseWeaponFile(fullPath);
+    const wObj = await parseWeaponFile(fullPath, file);
     if (wObj) {
       results.push(wObj);
     }

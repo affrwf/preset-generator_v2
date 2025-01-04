@@ -2,7 +2,7 @@
  * parse_skins.js
  * ---------------
  * 1) Читает все .xml из data/skins/
- * 2) Парсит <GameItem name="..."/>
+ * 2) Парсит <GameItem name="..."/> и <param name="classes" value="..."/>
  * 3) Складывает результат в data/all_skins.json
  */
 const fs = require('fs');
@@ -22,10 +22,12 @@ async function parseOneSkin(filePath) {
 
   const name = root.$.name || 'unknown_skin';
 
-  // Можно вытащить и другие поля
-  // const someParam = root.$.someAttr || ...
+  // Ищем параметр classes в <mmo_stats>
+  const mmoStats = root.mmo_stats?.[0]?.param || [];
+  const classesParam = mmoStats.find(p => p.$?.name === 'classes');
+  const classes = classesParam?.$.value || 'unknown_class';
 
-  return { name };
+  return { name, classes };
 }
 
 async function main() {
