@@ -26,16 +26,16 @@
     }
     /* Две основные колонки: левая (результат и генерация) и правая (генератор) */
     .container {
-    display: flex;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 16px;
-    box-sizing: border-box;
-    align-content: flex-end;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: stretch;
+      display: flex;
+      gap: 16px;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 16px;
+      box-sizing: border-box;
+      align-content: flex-end;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: stretch;
     }
     /* Левая колонка */
     .left-column {
@@ -142,17 +142,10 @@
       margin: 0 6px;
       padding: 6px 12px;
     }
-    /* Блок внешности и выбранных */
+    /* Блок выбранных */
     .appearance-block, .selected-weapons {
       margin-bottom: 16px;
     }
-    select {
-      width: 100%;
-      padding: 6px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    /* Выбранные предметы */
     .selectedWeaponItem {
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -213,12 +206,61 @@
     .random-buttons button:hover {
       background: #138496;
     }
-    /* Кнопка удалить у выбранных предметов */
     .selectedWeaponItem button {
       margin-left: 8px;
       background: #dc3545;
       color: #fff;
       padding: 4px 8px;
+    }
+    /* Новые стили для блока поиска внешности (автокомплит) */
+    .appearance-search-container {
+      position: relative;
+      margin-bottom: 12px;
+    }
+    .appearance-search-container label {
+      display: block;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+    #appearanceSearch {
+      width: 100%;
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .appearance-dropdown {
+      position: absolute;
+      top: 40px; /* примерно под инпутом */
+      left: 0;
+      z-index: 999;
+      width: 100%;
+      max-height: 200px;
+      overflow-y: auto;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      display: none; /* по умолчанию скрыто */
+    }
+    .appearance-dropdown-item {
+      padding: 6px 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+      transition: background 0.2s;
+    }
+    .appearance-dropdown-item:last-child {
+      border-bottom: none;
+    }
+    .appearance-dropdown-item:hover {
+      background: #f2f2f2;
+    }
+    /* Выбранная внешность */
+    .appearance-selected {
+      font-size: 15px;
+      margin-top: 6px;
+      color: #444;
+    }
+    .appearance-selected span {
+      font-weight: bold;
     }
   </style>
 </head>
@@ -296,7 +338,6 @@
         <label for="searchInput">Поиск оружия:</label><br>
         <input type="text" id="searchInput" placeholder="Введите название">
       </div>
-
       <!-- Список оружий + пагинация -->
       <div class="weapon-list-container">
         <div class="weapon-list">
@@ -310,14 +351,20 @@
       </div>
     </div>
   </div>
+
   <div class="generator-card" style="margin-top:16px;">
-    <!-- Выбор внешности -->
-    <div class="appearance-block">
-      <h2>Выбор внешности</h2>
-      <select id="appearanceSelect">
-        <!-- заполняется динамически -->
-      </select>
+    <!-- Современный поиск внешности (автокомплит) -->
+    <div class="appearance-search-container">
+      <label for="appearanceSearch">Поиск внешности:</label>
+      <input type="text" id="appearanceSearch" placeholder="Введите название внешности">
+      <div class="appearance-dropdown" id="appearanceDropdown"></div>
     </div>
+
+    <!-- Показ текущей выбранной внешности -->
+    <div class="appearance-selected" id="appearanceSelected">
+      Текущая внешность: <span>— не выбрана —</span>
+    </div>
+
     <!-- Выбранные предметы -->
     <div class="selected-weapons">
       <h2>Выбранные предметы</h2>
@@ -351,7 +398,6 @@ function getSkinLocalizedName(weaponName, skinId, locMap) {
   return locMap[fullKey] || skinId;
 }
 
-
 // -------------------------------------------------------------
 // Глобальные
 // -------------------------------------------------------------
@@ -361,7 +407,7 @@ let localizationMap = {};
 
 let filteredWeapons = [];
 let selectedWeapons = [];
-let selectedAppearance = '';
+let selectedAppearance = ''; // хранит name выбранной внешности
 
 let currentPage = 1;
 const itemsPerPage = 20;
@@ -381,10 +427,8 @@ window.addEventListener('load', async () => {
       skinsData = await sRes.json();
     }
 
-    populateAppearanceSelect();
-
+    // Изначальный список оружия (полный)
     filteredWeapons = [...weaponsData];
-    currentPage = 1;
     renderWeaponList();
 
     // Слушатели на кнопки "Случайная генерация"
@@ -392,6 +436,13 @@ window.addEventListener('load', async () => {
     document.getElementById('randomM').addEventListener('click', () => generateRandomPreset('M'));
     document.getElementById('randomE').addEventListener('click', () => generateRandomPreset('E'));
     document.getElementById('randomS').addEventListener('click', () => generateRandomPreset('S'));
+
+    // Поиск по оружию
+    document.getElementById('searchInput').addEventListener('input', onWeaponSearch);
+
+    // Автокомплит для внешности
+    setupAppearanceAutocomplete();
+
   } catch (err) {
     console.error('Ошибка загрузки данных:', err);
   }
@@ -452,36 +503,9 @@ async function loadLocalization(path) {
 }
 
 // -------------------------------------------------------------
-// populateAppearanceSelect
+// Поиск оружия «на лету»
 // -------------------------------------------------------------
-function populateAppearanceSelect() {
-  const sel = document.getElementById('appearanceSelect');
-  sel.innerHTML = '';
-
-  const noneOpt = document.createElement('option');
-  noneOpt.value = '';
-  noneOpt.textContent = 'Без внешности';
-  sel.appendChild(noneOpt);
-
-  skinsData.forEach(skin => {
-    const opt = document.createElement('option');
-    opt.value = skin.name;
-    const locName = localizationMap[skin.name] || skin.name;
-    opt.textContent = locName;
-    sel.appendChild(opt);
-  });
-
-  selectedAppearance = '';
-  sel.value = '';
-  sel.addEventListener('change', () => {
-    selectedAppearance = sel.value;
-  });
-}
-
-// -------------------------------------------------------------
-// Поиск «на лету»
-// -------------------------------------------------------------
-document.getElementById('searchInput').addEventListener('input', () => {
+function onWeaponSearch() {
   const query = document.getElementById('searchInput').value.toLowerCase();
   filteredWeapons = weaponsData.filter(w => {
     const locName = localizationMap[w.name] || w.name;
@@ -493,10 +517,10 @@ document.getElementById('searchInput').addEventListener('input', () => {
   });
   currentPage = 1;
   renderWeaponList();
-});
+}
 
 // -------------------------------------------------------------
-// renderWeaponList (пагинация)
+// Пагинация списка оружий
 // -------------------------------------------------------------
 function renderWeaponList() {
   const ul = document.getElementById('weaponsUl');
@@ -533,6 +557,65 @@ document.getElementById('nextPageBtn').addEventListener('click', () => {
 });
 
 // -------------------------------------------------------------
+// Современный автокомплит для внешности
+// -------------------------------------------------------------
+function setupAppearanceAutocomplete() {
+  const input = document.getElementById('appearanceSearch');
+  const dropdown = document.getElementById('appearanceDropdown');
+  const selectedEl = document.getElementById('appearanceSelected');
+
+  // при вводе текста — фильтруем список скинов
+  input.addEventListener('input', () => {
+    const query = input.value.toLowerCase().trim();
+    if (!query) {
+      dropdown.innerHTML = '';
+      dropdown.style.display = 'none';
+      return;
+    }
+
+    // Фильтрация по названию
+    const results = skinsData.filter(skin => {
+      const locName = localizationMap[skin.name] || skin.name;
+      return locName.toLowerCase().includes(query);
+    });
+
+    // Если нечего показывать
+    if (!results.length) {
+      dropdown.innerHTML = '<div class="appearance-dropdown-item" style="opacity:0.5;">Нет совпадений</div>';
+      dropdown.style.display = 'block';
+      return;
+    }
+
+    // Формируем HTML выпадающего списка
+    dropdown.innerHTML = '';
+    results.forEach(skin => {
+      const locName = localizationMap[skin.name] || skin.name;
+      const itemDiv = document.createElement('div');
+      itemDiv.className = 'appearance-dropdown-item';
+      itemDiv.textContent = locName;
+      itemDiv.onclick = () => {
+        // При выборе скина
+        selectedAppearance = skin.name;
+        dropdown.style.display = 'none';
+        input.value = locName; // показываем локализованное имя
+        selectedEl.innerHTML = `Текущая внешность: <span>${locName}</span>`;
+        // Генерируем пресет сразу
+        doGenerate();
+      };
+      dropdown.appendChild(itemDiv);
+    });
+    dropdown.style.display = 'block';
+  });
+
+  // Если кликнули где-то в документе вне этого блока — прячем dropdown
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target) && e.target !== input) {
+      dropdown.style.display = 'none';
+    }
+  });
+}
+
+// -------------------------------------------------------------
 // addSelectedWeapon
 // -------------------------------------------------------------
 function addSelectedWeapon(w) {
@@ -553,6 +636,8 @@ function addSelectedWeapon(w) {
   };
   selectedWeapons.push(newItem);
   renderSelectedWeapons();
+  // Автогенерация пресета
+  doGenerate();
 }
 
 // -------------------------------------------------------------
@@ -591,6 +676,7 @@ function renderSelectedWeapons() {
       sel.value = sw.selectedSkinId;
       sel.onchange = e => {
         sw.selectedSkinId = e.target.value;
+        doGenerate(); // пересобираем
       };
       label.appendChild(sel);
       div.appendChild(document.createElement('br'));
@@ -603,6 +689,7 @@ function renderSelectedWeapons() {
     removeBtn.onclick = () => {
       selectedWeapons.splice(index, 1);
       renderSelectedWeapons();
+      doGenerate();
     };
     div.appendChild(removeBtn);
 
@@ -743,6 +830,11 @@ function generateRandomPreset(classChar) {
   const randomSkin = randomItem(skinCandidates);
   if (randomSkin) {
     selectedAppearance = randomSkin.name;
+    // отобразим в UI
+    const locName = localizationMap[randomSkin.name] || randomSkin.name;
+    document.getElementById('appearanceSearch').value = locName;
+    document.getElementById('appearanceSelected').innerHTML =
+      `Текущая внешность: <span>${locName}</span>`;
   }
 
   // Перерисовываем и генерим
@@ -751,7 +843,7 @@ function generateRandomPreset(classChar) {
 }
 
 // -------------------------------------------------------------
-// setRandomSkinForLast
+// Вспомогательные функции
 // -------------------------------------------------------------
 function setRandomSkinForLast() {
   if (!selectedWeapons.length) return;
@@ -763,9 +855,6 @@ function setRandomSkinForLast() {
   }
 }
 
-// -------------------------------------------------------------
-// isWithinRange (с учётом min/max полей)
-// -------------------------------------------------------------
 function isWithinRange(weaponName, category) {
   const minInput = document.getElementById(category + 'Min');
   const maxInput = document.getElementById(category + 'Max');
@@ -787,9 +876,6 @@ function isWithinRange(weaponName, category) {
   return true;
 }
 
-// -------------------------------------------------------------
-// randomItem
-// -------------------------------------------------------------
 function randomItem(arr) {
   if (!arr || arr.length === 0) return null;
   const idx = Math.floor(Math.random() * arr.length);
