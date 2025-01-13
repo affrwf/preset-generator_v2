@@ -141,6 +141,7 @@
     .pagination-controls button {
       margin: 0 6px;
       padding: 6px 12px;
+	  margin-top: 8px;
     }
     /* Блок выбранных */
     .appearance-block, .selected-weapons {
@@ -193,7 +194,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 8px;
+      margin-top: 15px;
     }
     .random-buttons button {
       background: #17a2b8;
@@ -277,6 +278,11 @@
     <div class="card">
       <h2>Результат (Lua)</h2>
       <textarea id="resultArea" readonly></textarea>
+	      <!-- Кнопки генерации/скачивания -->
+		<div style="display:flex; gap:8px; margin-top: 13px;">
+		  <button id="downloadBtn" class="btn-download">Скачать пресет</button>
+		  <button id="copyBtn" class="btn-primary">Скопировать пресет</button>
+		</div>
     </div>
     <!-- Случайная генерация -->
     <div class="card random-block">
@@ -371,11 +377,6 @@
       <div id="selectedContainer"></div>
     </div>
   
-    <!-- Кнопки генерации/скачивания -->
-    <div style="display:flex; gap:8px;">
-      <button id="generateBtn" class="btn-primary">Сгенерировать пресет</button>
-      <button id="downloadBtn" class="btn-download">Скачать пресет</button>
-    </div>
   </div>
 </div>
 
@@ -442,6 +443,12 @@ window.addEventListener('load', async () => {
 
     // Автокомплит для внешности
     setupAppearanceAutocomplete();
+
+    // Новая кнопка "Скопировать пресет"
+    document.getElementById('copyBtn').addEventListener('click', () => {
+      const text = document.getElementById('resultArea').value;
+      navigator.clipboard.writeText(text)
+    });
 
   } catch (err) {
     console.error('Ошибка загрузки данных:', err);
