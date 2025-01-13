@@ -713,21 +713,30 @@ function doGenerate() {
 // generatePresetLua
 // -------------------------------------------------------------
 function generatePresetLua() {
+  // Генерация случайной головы от 1 до 23
+  const randomHeadNumber = Math.floor(Math.random() * 23) + 1; // от 1 до 23
+  const randomHead = `{ name = "default_head_${randomHeadNumber}" },`;
+
+  // Выбранная внешность
   const appearanceLine = selectedAppearance 
     ? `{ name = "${selectedAppearance}" },`
     : '';
 
+  // Armor блок, добавляем голову и внешность
   const armorBlock = `
   armor = {
+    ${randomHead}
     ${appearanceLine}
   },`;
 
+  // Items
   let itemsStr = `  items = {\n`;
   selectedWeapons.forEach(sw => {
     itemsStr += `    { name = "${sw.originalName}", skin = "${sw.selectedSkinId}" },\n`;
   });
   itemsStr += `  },`;
 
+  // Attachments
   let attachmentsStr = `  attachments = {\n`;
   selectedWeapons.forEach(sw => {
     (sw.attachments || []).forEach(a => {
@@ -736,6 +745,7 @@ function generatePresetLua() {
   });
   attachmentsStr += `  },`;
 
+  // Ammo
   let ammoStr = `  ammo = {\n`;
   selectedWeapons.forEach(sw => {
     if (sw.ammoType) {
@@ -744,6 +754,7 @@ function generatePresetLua() {
   });
   ammoStr += `  },`;
 
+  // Итоговый Lua-пресет
   return `
 local inventory = {
 ${armorBlock}
@@ -755,19 +766,6 @@ return inventory
 `.trim();
 }
 
-// -------------------------------------------------------------
-// downloadBtn -> скачать
-// -------------------------------------------------------------
-document.getElementById('downloadBtn').addEventListener('click', () => {
-  const text = document.getElementById('resultArea').value;
-  const blob = new Blob([text], {type:'text/plain'});
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = 'warface_preset.lua';
-  link.click();
-  URL.revokeObjectURL(url);
-});
 
 // -------------------------------------------------------------
 // Случайная генерация
