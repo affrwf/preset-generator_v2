@@ -84,6 +84,18 @@
     "classes": "E"
   },
   {
+    "name": "engineer_fbs_mvt23hidalgo10",
+    "classes": "E"
+  },
+  {
+    "name": "engineer_fbs_mvt24esport03",
+    "classes": "E"
+  },
+  {
+    "name": "engineer_fbs_mvt24sunset11",
+    "classes": "E"
+  },
+  {
     "name": "engineer_fbs_nano_01",
     "classes": "E"
   },
@@ -176,6 +188,14 @@
     "classes": "E"
   },
   {
+    "name": "f_engineer_fbs_mvt24temp01",
+    "classes": "E"
+  },
+  {
+    "name": "f_engineer_fbs_mvt25na04alfa",
+    "classes": "E"
+  },
+  {
     "name": "f_engineer_fbs_nano_01",
     "classes": "E"
   },
@@ -209,6 +229,14 @@
   },
   {
     "name": "f_medic_fbs_gorgona_premium_01",
+    "classes": "M"
+  },
+  {
+    "name": "f_medic_fbs_mvt23temp12",
+    "classes": "M"
+  },
+  {
+    "name": "f_medic_fbs_mvt25na04alfa",
     "classes": "M"
   },
   {
@@ -352,6 +380,14 @@
     "classes": "S"
   },
   {
+    "name": "f_sniper_fbs_mvt24temp03",
+    "classes": "S"
+  },
+  {
+    "name": "f_sniper_fbs_mvt25na04alfa",
+    "classes": "S"
+  },
+  {
     "name": "f_sniper_fbs_nano_01",
     "classes": "S"
   },
@@ -393,6 +429,14 @@
   },
   {
     "name": "f_soldier_fbs_gorgona_premium_01",
+    "classes": "R"
+  },
+  {
+    "name": "f_soldier_fbs_mvt24temp04",
+    "classes": "R"
+  },
+  {
+    "name": "f_soldier_fbs_mvt25na04alfa",
     "classes": "R"
   },
   {
@@ -493,6 +537,22 @@
   },
   {
     "name": "medic_fbs_mountain2208",
+    "classes": "M"
+  },
+  {
+    "name": "medic_fbs_mvt23hidalgo10",
+    "classes": "M"
+  },
+  {
+    "name": "medic_fbs_mvt24esport03",
+    "classes": "M"
+  },
+  {
+    "name": "medic_fbs_mvt24plaguedoc05",
+    "classes": "M"
+  },
+  {
+    "name": "medic_fbs_mvt24sunset11",
     "classes": "M"
   },
   {
@@ -856,6 +916,18 @@
     "classes": "S"
   },
   {
+    "name": "sniper_fbs_mvt23hidalgo10",
+    "classes": "S"
+  },
+  {
+    "name": "sniper_fbs_mvt24esport03",
+    "classes": "S"
+  },
+  {
+    "name": "sniper_fbs_mvt24sunset11",
+    "classes": "S"
+  },
+  {
     "name": "sniper_fbs_nano_01",
     "classes": "S"
   },
@@ -989,6 +1061,26 @@
   },
   {
     "name": "soldier_fbs_muerte01",
+    "classes": "R"
+  },
+  {
+    "name": "soldier_fbs_mvt23atom12",
+    "classes": "R"
+  },
+  {
+    "name": "soldier_fbs_mvt23hidalgo10",
+    "classes": "R"
+  },
+  {
+    "name": "soldier_fbs_mvt24esport03",
+    "classes": "R"
+  },
+  {
+    "name": "soldier_fbs_mvt24humourist02",
+    "classes": "R"
+  },
+  {
+    "name": "soldier_fbs_mvt24sunset11",
     "classes": "R"
   },
   {
