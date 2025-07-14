@@ -16,6 +16,10 @@
     "classes": "E"
   },
   {
+    "name": "engineer_fbs_25na05bope",
+    "classes": "E"
+  },
+  {
     "name": "engineer_fbs_absolute2209",
     "classes": "E"
   },
@@ -37,6 +41,10 @@
   },
   {
     "name": "engineer_fbs_brazil_01",
+    "classes": "E"
+  },
+  {
+    "name": "engineer_fbs_cat2502",
     "classes": "E"
   },
   {
@@ -220,6 +228,10 @@
     "classes": "M"
   },
   {
+    "name": "f_shared_fbs_25na04bope",
+    "classes": "MERS"
+  },
+  {
     "name": "f_shared_fbs_cat2501",
     "classes": "MERS"
   },
@@ -356,6 +368,10 @@
     "classes": "S"
   },
   {
+    "name": "f_sniper_fbs_widow2207",
+    "classes": "S"
+  },
+  {
     "name": "f_soldier_fbs_02",
     "classes": "R"
   },
@@ -365,6 +381,10 @@
   },
   {
     "name": "f_soldier_fbs_04",
+    "classes": "R"
+  },
+  {
+    "name": "f_soldier_fbs_25na04bope",
     "classes": "R"
   },
   {
@@ -405,6 +425,10 @@
   },
   {
     "name": "medic_fbs_23fb_01",
+    "classes": "M"
+  },
+  {
+    "name": "medic_fbs_25na06warland",
     "classes": "M"
   },
   {
@@ -536,6 +560,22 @@
     "classes": "MERS"
   },
   {
+    "name": "shared_fbs_25na03bope",
+    "classes": "MERS"
+  },
+  {
+    "name": "shared_fbs_25na05bope",
+    "classes": "MERS"
+  },
+  {
+    "name": "shared_fbs_25na06warland",
+    "classes": "MERS"
+  },
+  {
+    "name": "shared_fbs_25na07warland",
+    "classes": "MERS"
+  },
+  {
     "name": "shared_fbs_alligator2207",
     "classes": "MERS"
   },
@@ -557,6 +597,10 @@
   },
   {
     "name": "shared_fbs_cat2412",
+    "classes": "MERS"
+  },
+  {
+    "name": "shared_fbs_cat2502",
     "classes": "MERS"
   },
   {
@@ -740,6 +784,14 @@
     "classes": "S"
   },
   {
+    "name": "sniper_fbs_25na03bope",
+    "classes": "S"
+  },
+  {
+    "name": "sniper_fbs_25na07warland",
+    "classes": "S"
+  },
+  {
     "name": "sniper_fbs_absolute2209",
     "classes": "S"
   },
@@ -789,6 +841,10 @@
   },
   {
     "name": "sniper_fbs_ghost_01",
+    "classes": "S"
+  },
+  {
+    "name": "sniper_fbs_hawk2207",
     "classes": "S"
   },
   {

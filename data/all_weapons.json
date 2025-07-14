@@ -9,7 +9,8 @@
       "ak02_skin",
       "ak03_skin",
       "biohazard2403",
-      "reptile2406"
+      "reptile2406",
+      "25bp03pinup"
     ],
     "attachments": [
       "perk_a",
@@ -1171,9 +1172,77 @@
     "skins": [
       "default",
       "bp09",
-      "anniversary23"
+      "anniversary23",
+      "25rating03",
+      "25bp06shark"
     ],
     "attachments": [
+      "mount01",
+      "charm",
+      "ar11_is_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ugl01",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "sp03",
+      "sc02",
+      "sc05",
+      "bn02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar11_25bp06shark",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar11_is_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ugl01",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "sp03",
+      "sc02",
+      "sc05",
+      "bn02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar11_25rating03",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25rating03"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
       "ar11_is_d",
       "as02",
       "as01",
@@ -1204,6 +1273,8 @@
       "anniversary23"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_is_d",
       "as02",
       "as01",
@@ -1234,6 +1305,8 @@
       "bp09"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_is_d",
       "as02",
       "as01",
@@ -1264,6 +1337,8 @@
       "bra02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_bra02_is_d",
       "as02",
       "as01",
@@ -1294,6 +1369,8 @@
       "crown"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_is_d",
       "as02",
       "as01",
@@ -1324,6 +1401,8 @@
       "crown02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_crown02_is_d",
       "as02",
       "as01",
@@ -1354,6 +1433,8 @@
       "gc01"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_gc01_is_d",
       "as02",
       "as01",
@@ -1383,9 +1464,13 @@
     "skins": [
       "gold01",
       "bp09",
-      "anniversary23"
+      "anniversary23",
+      "25rating03",
+      "25bp06shark"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_is_d",
       "as02",
       "as01",
@@ -1416,6 +1501,8 @@
       "rua01"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_rua01_is_d",
       "as02",
       "as01",
@@ -1446,6 +1533,8 @@
       "zsd02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ar11_is_d",
       "as02",
       "as01",
@@ -1478,9 +1567,45 @@
       "viet01",
       "ice01",
       "ec03",
-      "bp07"
+      "bp07",
+      "25summer06"
     ],
     "attachments": [
+      "mount02",
+      "charm",
+      "ar12_is_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ugl01",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar12_sp_d",
+      "sc02",
+      "sp03",
+      "sc05",
+      "bn02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar12_25summer06",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25summer06"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
       "ar12_is_d",
       "as02",
       "as01",
@@ -1512,6 +1637,8 @@
       "bp07"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "ar12_is_d",
       "as02",
       "as01",
@@ -1543,6 +1670,8 @@
       "crown02"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "ar12_crown02_is_d",
       "as02",
       "as01",
@@ -1574,6 +1703,8 @@
       "ec01"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "ar12_ec01_is_d",
       "as02",
       "as01",
@@ -1605,6 +1736,8 @@
       "ec03"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "ar12_ec01_is_d",
       "as02",
       "as01",
@@ -1638,9 +1771,12 @@
       "viet01",
       "ice01",
       "ec03",
-      "bp07"
+      "bp07",
+      "25summer06"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "ar12_is_d",
       "as02",
       "as01",
@@ -1672,6 +1808,8 @@
       "ice01"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "ar12_ice01_is_d",
       "as02",
       "as01",
@@ -1703,6 +1841,8 @@
       "viet01"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "ar12_is_d",
       "as02",
       "as01",
@@ -2613,9 +2753,69 @@
       "set05",
       "camo07",
       "camo08",
-      "bp09"
+      "bp09",
+      "mvt25spring04",
+      "25spring04",
+      "mvt25rday06",
+      "25rating06"
     ],
     "attachments": [
+      "mount03",
+      "charm",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar23_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar23_25rating06",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25rating06"
+    ],
+    "attachments": [
+      "mount03",
+      "charm",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar23_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar23_25spring04",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25spring04"
+    ],
+    "attachments": [
+      "mount03",
+      "charm",
       "as02",
       "as01",
       "as04",
@@ -2641,6 +2841,8 @@
       "bp09"
     ],
     "attachments": [
+      "mount03",
+      "charm",
       "as02",
       "as01",
       "as04",
@@ -2666,6 +2868,8 @@
       "camo08"
     ],
     "attachments": [
+      "mount03",
+      "charm",
       "as02_camo08",
       "as01_camo08",
       "as04_camo08",
@@ -2693,14 +2897,76 @@
       "set05",
       "camo07",
       "camo08",
-      "bp09"
+      "bp09",
+      "mvt25spring04",
+      "25spring04",
+      "mvt25rday06",
+      "25rating06"
     ],
     "attachments": [
+      "mount03",
+      "charm",
       "as02",
       "as01",
       "as04",
       "rds01",
+      "rds07",
       "rds02",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar23_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar23_mvt25rday06",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "mvt25rday06"
+    ],
+    "attachments": [
+      "mount03",
+      "charm",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar23_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar23_mvt25spring04",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "mvt25spring04"
+    ],
+    "attachments": [
+      "mount03",
+      "charm",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "gp03",
       "gp02",
       "gpp01",
       "ar23_sc_d",
@@ -2719,6 +2985,8 @@
       "set05"
     ],
     "attachments": [
+      "mount03",
+      "charm",
       "as02",
       "as01",
       "as04",
@@ -3352,7 +3620,77 @@
       "camo08",
       "camo09",
       "ice01",
-      "bp05"
+      "bp05",
+      "25bp03pinup",
+      "25summer07"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar27_is_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ar27_gp_d",
+      "ugl01",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar27_sp_d",
+      "sc02",
+      "sp03",
+      "sc05",
+      "bn02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar27_25bp03pinup",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar27_is_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ar27_gp_d",
+      "ugl01",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar27_sp_d",
+      "sc02",
+      "sp03",
+      "sc05",
+      "bn02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar27_25summer07",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25summer07"
     ],
     "attachments": [
       "mount01",
@@ -3495,7 +3833,9 @@
       "camo08",
       "camo09",
       "ice01",
-      "bp05"
+      "bp05",
+      "25bp03pinup",
+      "25summer07"
     ],
     "attachments": [
       "mount01",
@@ -5193,7 +5533,44 @@
       "samurai01",
       "heist02",
       "dragon01",
-      "fire01_console"
+      "fire01_console",
+      "winter2502",
+      "mvt25victory05",
+      "25spring05"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar35_rds01_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ar35_gp_d",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar35_sp_d",
+      "ar35_sc_d",
+      "sc02",
+      "sp03",
+      "sc05",
+      "bn02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar35_25spring05",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25spring05"
     ],
     "attachments": [
       "mount01",
@@ -5407,7 +5784,10 @@
       "samurai01",
       "heist02",
       "dragon01",
-      "fire01_console"
+      "fire01_console",
+      "winter2502",
+      "mvt25victory05",
+      "25spring05"
     ],
     "attachments": [
       "mount01",
@@ -5573,6 +5953,40 @@
     ]
   },
   {
+    "name": "ar35_mvt25victory05",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "mvt25victory05"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar35_rds01_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ar35_gp_d",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar35_sp_d",
+      "ar35_sc_d",
+      "sc02",
+      "sp03",
+      "sc05",
+      "bn02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "ar35_samurai01",
     "category": "ar",
     "ammoType": "bullet_ar",
@@ -5599,6 +6013,40 @@
       "sp03_dark01",
       "sc05_dark01",
       "bn02_dark01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar35_winter2502",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "winter2502"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar35_rds01_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ar35_gp_d",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar35_sp_d",
+      "ar35_sc_d",
+      "sc02",
+      "sp03",
+      "sc05",
+      "bn02",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -7111,7 +7559,69 @@
       "default",
       "heist03",
       "cartel00001",
-      "autumn2209_02"
+      "autumn2209_02",
+      "25spring03",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "ar43_rds01_d",
+      "ar43_rds02_d",
+      "as01",
+      "as02",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ar43_gp_d",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar43_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar43_25bp06shark",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "ar43_rds01_d",
+      "ar43_rds02_d",
+      "as01",
+      "as02",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ar43_gp_d",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar43_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar43_25spring03",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25spring03"
     ],
     "attachments": [
       "mount02",
@@ -7204,7 +7714,9 @@
       "gold01",
       "heist03",
       "cartel00001",
-      "autumn2209_02"
+      "autumn2209_02",
+      "25spring03",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -7613,6 +8125,41 @@
     "ammoType": "bullet_ar",
     "skins": [
       "holo02"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "ar45_is_d",
+      "ar45_rds_d",
+      "as02",
+      "as01",
+      "as04",
+      "rds01",
+      "rds07",
+      "rds02",
+      "ar45_gp_d",
+      "gp03",
+      "gp02",
+      "gpp01",
+      "ar45_sp_d",
+      "ar45_sc_d",
+      "sc02",
+      "sp03",
+      "sc05",
+      "bn02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar45_mvt23sales09",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "mvt23sales09"
     ],
     "attachments": [
       "mount02",
@@ -9506,7 +10053,8 @@
       "midgard2309",
       "north2312",
       "winter2402_02",
-      "pollution2403"
+      "pollution2403",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -9523,6 +10071,34 @@
       "ar58_sc_d",
       "ar58_gp_d",
       "ar58_bone2309_01_sa01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar58_25bp06shark",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "ar58_is_d",
+      "ar58_rds_d",
+      "ar58_is_d_folded",
+      "ar58_ss_d",
+      "ar58_mag02_d",
+      "ar58_mag01_d",
+      "ar58_sp01_d",
+      "ar58_sp02_d",
+      "ar58_sp03_d",
+      "ar58_sc_d",
+      "ar58_gp_d",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -9575,7 +10151,8 @@
       "midgard2309",
       "north2312",
       "winter2402_02",
-      "pollution2403"
+      "pollution2403",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -9863,7 +10440,55 @@
       "sales2401",
       "biohazard2403",
       "inx24spring04",
-      "mvt24anniversary"
+      "mvt24anniversary",
+      "25bp03pinup",
+      "25pve06"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar59_as_d",
+      "ar59_rds_d",
+      "ar59_gp_d",
+      "ar59_sp01_d",
+      "ar59_sc_d",
+      "ar59_sp02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar59_25bp03pinup",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar59_as_d",
+      "ar59_rds_d",
+      "ar59_gp_d",
+      "ar59_sp01_d",
+      "ar59_sc_d",
+      "ar59_sp02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar59_25pve06",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25pve06"
     ],
     "attachments": [
       "mount01",
@@ -9916,7 +10541,9 @@
       "sales2401",
       "biohazard2403",
       "inx24spring04",
-      "mvt24anniversary"
+      "mvt24anniversary",
+      "25bp03pinup",
+      "25pve06"
     ],
     "attachments": [
       "mount01",
@@ -9940,6 +10567,29 @@
     "ammoType": "bullet_ar",
     "skins": [
       "howl2312"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar59_as_d",
+      "ar59_rds_d",
+      "ar59_gp_d",
+      "ar59_sp01_d",
+      "ar59_sc_d",
+      "ar59_sp02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar59_mvt24anniversary",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "mvt24anniversary"
     ],
     "attachments": [
       "mount01",
@@ -10091,6 +10741,29 @@
     ]
   },
   {
+    "name": "ar60_mvt24summer",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "mvt24summer"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar60_ugl_d",
+      "ar60_rds_d",
+      "ar60_ss_d",
+      "ar60_sp01_d",
+      "ar60_sp02_d",
+      "ar60_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "ar60_reptile2406",
     "category": "ar",
     "ammoType": "bullet_ar",
@@ -10213,7 +10886,31 @@
       "default",
       "mastery01",
       "cat2412",
-      "winter2412"
+      "winter2412",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "ar61_rds_d",
+      "as01",
+      "as02",
+      "ar61_sp01_d",
+      "ar61_sp02_d",
+      "ar61_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar61_25bp03pinup",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "mount02",
@@ -10262,7 +10959,8 @@
       "gold01",
       "mastery01",
       "cat2412",
-      "winter2412"
+      "winter2412",
+      "25bp03pinup"
     ],
     "attachments": [
       "mount02",
@@ -10296,6 +10994,106 @@
       "ar61_sp01_d",
       "ar61_sp02_d",
       "ar61_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar62",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "default",
+      "grind01",
+      "25na04bope"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar62_rds_d",
+      "shg69_rds_d",
+      "smg54_rds_d",
+      "as01",
+      "as02",
+      "as04",
+      "rds01",
+      "rds10",
+      "ar62_ss_d",
+      "ar62_sp01_d",
+      "ar62_sp02_d",
+      "sp03",
+      "smg59_sc_d",
+      "sc02",
+      "sc05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar62_25na04bope",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25na04bope"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar62_rds_d",
+      "shg69_rds_d",
+      "smg54_rds_d",
+      "as01",
+      "as02",
+      "as04",
+      "rds01",
+      "rds10",
+      "ar62_ss_d",
+      "ar62_sp01_d",
+      "ar62_sp02_d",
+      "sp03",
+      "smg59_sc_d",
+      "sc02",
+      "sc05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "ar62_gold01",
+    "category": "ar",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "gold01",
+      "grind01",
+      "25na04bope"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ar62_rds_d",
+      "shg69_rds_d",
+      "smg54_rds_d",
+      "as01",
+      "as02",
+      "as04",
+      "rds01",
+      "rds10",
+      "ar62_ss_d",
+      "ar62_sp01_d",
+      "ar62_sp02_d",
+      "sp03",
+      "smg59_sc_d",
+      "sc02",
+      "sc05",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -10436,33 +11234,9 @@
     ]
   },
   {
-    "name": "asgard_mech_mg",
-    "category": "asgard_mech_mg.xml",
-    "ammoType": "bullet_hmg",
-    "skins": [
-      "default"
-    ],
-    "attachments": [
-      "muzzle_flash_effect",
-      "muzzle_flash_light"
-    ]
-  },
-  {
     "name": "asgard_mech_mg_pvp_powerup",
     "category": "asgard_mech_mg_pvp_powerup.xml",
     "ammoType": "bullet_hmg",
-    "skins": [
-      "default"
-    ],
-    "attachments": [
-      "muzzle_flash_effect",
-      "muzzle_flash_light"
-    ]
-  },
-  {
-    "name": "asgard_mech_rl",
-    "category": "asgard_mech_rl.xml",
-    "ammoType": "bullet_asgard_mech_rl",
     "skins": [
       "default"
     ],
@@ -10484,17 +11258,6 @@
     ]
   },
   {
-    "name": "asgard_rl",
-    "category": "asgard_rl.xml",
-    "ammoType": "bullet_asgard_rl",
-    "skins": [],
-    "attachments": [
-      "arl02_rds_d",
-      "muzzle_flash_effect",
-      "muzzle_flash_light"
-    ]
-  },
-  {
     "name": "cm01",
     "category": "cm",
     "ammoType": "claymoreexplosive",
@@ -10506,7 +11269,9 @@
       "claymoreexplosive_coil2409_skin",
       "claymoreexplosive_hlw24_skin",
       "claymoreexplosive_underground2412_skin",
-      "claymoreexplosive10_skin"
+      "claymoreexplosive10_skin",
+      "claymoreexplosive_cat2502_skin",
+      "claymoreexplosive_25bp06shark_skin"
     ],
     "attachments": [
       "perk_a",
@@ -10588,7 +11353,8 @@
       "df03_skin",
       "mvt24plaguedoc05",
       "coil2409",
-      "rat2412"
+      "rat2412",
+      "25bp06shark"
     ],
     "attachments": [
       "muzzle_flash_effect",
@@ -10665,7 +11431,9 @@
       "explosivegrenade01_mvt24operator09_skin",
       "explosivegrenade07_worldcup22_skin",
       "explosivegrenade01_underground2412_skin",
-      "explosivegrenade01_winter2412_skin"
+      "explosivegrenade01_winter2412_skin",
+      "explosivegrenade01_mvt25operator02_skin",
+      "explosivegrenade01_inx24comeback_skin"
     ],
     "attachments": [
       "perk_a",
@@ -10782,7 +11550,8 @@
     "category": "fl",
     "ammoType": "flashbang_default",
     "skins": [
-      "flashbang02_skin"
+      "flashbang02_skin",
+      "flashbang_25bp03pinup_skin"
     ],
     "attachments": [
       "perk_a",
@@ -10874,7 +11643,23 @@
       "gasgrenade_biohazard2403_skin",
       "gasgrenade_reptile2406_skin",
       "gasgrenade_mvt24anniversary_skin",
-      "gasgrenade_underground2412_skin"
+      "gasgrenade_underground2412_skin",
+      "gasgrenade_winter2502_skin"
+    ],
+    "attachments": [
+      "perk_a",
+      "perk_b"
+    ]
+  },
+  {
+    "name": "gg01_powerup_zombie",
+    "category": "gg",
+    "ammoType": "gasgrenade_powerup_zombie",
+    "skins": [
+      "gasgrenade_mastery01_skin",
+      "gasgrenade_biohazard2403_skin",
+      "gasgrenade_reptile2406_skin",
+      "gasgrenade_mvt24anniversary_skin"
     ],
     "attachments": [
       "perk_a",
@@ -11799,6 +12584,19 @@
     ]
   },
   {
+    "name": "kn03_mvt24plaguedoc05",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt24plaguedoc05"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
     "name": "kn03_newyear25",
     "category": "kn",
     "ammoType": "",
@@ -11854,10 +12652,7 @@
     "name": "kn03_xmas",
     "category": "kn",
     "ammoType": "",
-    "skins": [
-      "default",
-      "newyear25"
-    ],
+    "skins": [],
     "attachments": [
       "top_small",
       "top_large",
@@ -11997,6 +12792,17 @@
     "attachments": [
       "top_small",
       "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn05_mvt24victory",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt24victory"
+    ],
+    "attachments": [
       "bottom"
     ]
   },
@@ -12552,6 +13358,19 @@
     "ammoType": "",
     "skins": [
       "lava01"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn13_mvt24humourist02",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt24humourist02"
     ],
     "attachments": [
       "top_small",
@@ -13438,6 +14257,19 @@
       "masacre01"
     ],
     "attachments": [
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn18_mvt23temp12",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt23temp12"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
       "bottom"
     ]
   },
@@ -15186,6 +16018,19 @@
     ]
   },
   {
+    "name": "kn43_mvt24defend02",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt24defend02"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
     "name": "kn43_saboteur01",
     "category": "kn",
     "ammoType": "",
@@ -15574,6 +16419,32 @@
     ]
   },
   {
+    "name": "kn45_mvt23esport12",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt23esport12"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn45_mvt23hidalgo10",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt23hidalgo10"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
     "name": "kn45_obsidian01",
     "category": "kn",
     "ammoType": "",
@@ -15767,6 +16638,19 @@
     ]
   },
   {
+    "name": "kn49_mvt24stval02",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt24stval02"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
     "name": "kn49_neon01_console",
     "category": "kn",
     "ammoType": "",
@@ -15924,6 +16808,21 @@
   },
   {
     "name": "kn51_autumn2209_02",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom",
+      "muzzle_flash_effect2",
+      "muzzle_tp"
+    ]
+  },
+  {
+    "name": "kn51_console",
     "category": "kn",
     "ammoType": "",
     "skins": [
@@ -16616,6 +17515,15 @@
     "attachments": []
   },
   {
+    "name": "kn56_mvt24operator09",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt24operator09"
+    ],
+    "attachments": []
+  },
+  {
     "name": "kn56_rating2306",
     "category": "kn",
     "ammoType": "",
@@ -16688,6 +17596,106 @@
     "attachments": []
   },
   {
+    "name": "kn57_mvt",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default",
+      "mvt23town01",
+      "mvt23jungle01",
+      "mvt23obsidian01",
+      "mvt24bf"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn57_mvt23jungle01",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt23jungle01"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn57_mvt23obsidian01",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt23obsidian01"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn57_mvt23town01",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt23town01"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn57_mvt24bf",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt24bf"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn57_pve",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default"
+    ],
+    "attachments": [
+      "top_small",
+      "top_large",
+      "bottom"
+    ]
+  },
+  {
+    "name": "kn58_mvt",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn59_mvt",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default"
+    ],
+    "attachments": []
+  },
+  {
     "name": "kn60",
     "category": "kn",
     "ammoType": "",
@@ -16711,6 +17719,24 @@
     "ammoType": "",
     "skins": [
       "default"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn61_25pve03",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "25pve03"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn61_25pve06",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "25pve06"
     ],
     "attachments": []
   },
@@ -16767,6 +17793,114 @@
     "ammoType": "",
     "skins": [
       "default"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn64_mvt25vdv07",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt25vdv07"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn64_mvt25victory05",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt25victory05"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn64_winter2502",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "winter2502"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn65",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn65_25rating03",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "25rating03"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn65_25rating06",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "25rating06"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn66",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn66_25bp03pinup",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "25bp03pinup"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn67",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn67_mvt25spring04",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "mvt25spring04"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn68",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "default"
+    ],
+    "attachments": []
+  },
+  {
+    "name": "kn68_25bp06shark",
+    "category": "kn",
+    "ammoType": "",
+    "skins": [
+      "25bp06shark"
     ],
     "attachments": []
   },
@@ -16837,7 +17971,13 @@
       "flamegrenade_mvt24summer_skin",
       "flamegrenade_coil2409_skin",
       "flamegrenade_underground2412_skin",
-      "flamegrenade_winter2412_skin"
+      "flamegrenade_winter2412_skin",
+      "flamegrenade_mvt25defend02_skin",
+      "flamegrenade_winter2502_skin",
+      "flamegrenade_mvt25op03skoof_skin",
+      "flamegrenade_mvt25op04comeback_skin",
+      "flamegrenade_mvt25op05lizards_skin",
+      "flamegrenade_25bp06shark_skin"
     ],
     "attachments": [
       "top_small",
@@ -18833,7 +19973,35 @@
       "mastery01",
       "coil2409",
       "hlw24",
-      "rat2412"
+      "rat2412",
+      "25pve03"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "mg30_rds_d",
+      "mg30_as_d",
+      "mg30_is_d",
+      "mg30_mag01_d",
+      "mg30_mag02_d",
+      "mg30_sp01_d",
+      "mg30_sp02_d",
+      "mg30_sc_d",
+      "mg30_bp_d",
+      "mg30_gp_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "mg30_25pve03",
+    "category": "mg",
+    "ammoType": "bullet_mg",
+    "skins": [
+      "25pve03"
     ],
     "attachments": [
       "mount01",
@@ -18892,7 +20060,8 @@
       "mastery01",
       "coil2409",
       "hlw24",
-      "rat2412"
+      "rat2412",
+      "25pve03"
     ],
     "attachments": [
       "mount01",
@@ -19187,7 +20356,31 @@
       "autumn2209_01",
       "newyear22",
       "deepwater2303",
-      "north2312"
+      "north2312",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "ps01",
+      "rds01",
+      "rds07",
+      "rds02",
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt01_25bp06shark",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25bp06shark"
     ],
     "attachments": [
       "ps01",
@@ -19263,9 +20456,12 @@
       "rds01",
       "rds07",
       "rds02",
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
       "muzzle_flash_effect",
       "muzzle_flash_light",
-      "muzzle_heatHazeNSmoke",
       "perk_a",
       "perk_b",
       "perk_c"
@@ -19400,12 +20596,15 @@
       "autumn2209_01",
       "newyear22",
       "deepwater2303",
-      "north2312"
+      "north2312",
+      "25bp06shark"
     ],
     "attachments": [
       "ps01",
       "rds01",
+      "rds07",
       "rds02",
+      "sc02",
       "sc03",
       "sp05",
       "bn05",
@@ -19514,6 +20713,14 @@
     "ammoType": "bullet_pt",
     "skins": [],
     "attachments": [
+      "ps01",
+      "rds01",
+      "rds07",
+      "rds02",
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -20026,7 +21233,8 @@
     "skins": [
       "default",
       "camo05",
-      "bp06"
+      "bp06",
+      "mvt25victory05"
     ],
     "attachments": [
       "sc02",
@@ -20084,6 +21292,25 @@
     "ammoType": "bullet_pt",
     "skins": [
       "hlw"
+    ],
+    "attachments": [
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt10_mvt25victory05",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt25victory05"
     ],
     "attachments": [
       "sc02",
@@ -20183,7 +21410,8 @@
       "coil2409",
       "rating2409",
       "gryphon2410",
-      "rat2412"
+      "rat2412",
+      "inx24comeback"
     ],
     "attachments": [
       "pt14_rds_d",
@@ -20309,7 +21537,8 @@
       "coil2409",
       "rating2409",
       "gryphon2410",
-      "rat2412"
+      "rat2412",
+      "inx24comeback"
     ],
     "attachments": [
       "pt14_rds_d",
@@ -20410,6 +21639,48 @@
     ]
   },
   {
+    "name": "pt14_mvt24anniversary",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24anniversary"
+    ],
+    "attachments": [
+      "pt14_rds_d",
+      "pt14_sc_d",
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt14_mvt24comeback",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24comeback"
+    ],
+    "attachments": [
+      "pt14_rds_d",
+      "pt14_sc_d",
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "pt14_rat2412",
     "category": "pt",
     "ammoType": "bullet_pt",
@@ -20492,6 +21763,7 @@
       "meteorgold02",
       "frontlines01",
       "victory22",
+      "catwoman2301",
       "kraken2306_01",
       "tomb2306",
       "summer23_01",
@@ -20504,8 +21776,7 @@
       "thunder2409",
       "mvt23temp12",
       "mvt24wday03",
-      "winter2412",
-      "catwoman2301"
+      "winter2412"
     ],
     "attachments": [
       "pt16_frontlines01_sa01",
@@ -20670,6 +21941,46 @@
     "ammoType": "bullet_pt",
     "skins": [
       "midgard2309"
+    ],
+    "attachments": [
+      "pt16_sp_d",
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt16_mvt23temp12",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt23temp12"
+    ],
+    "attachments": [
+      "pt16_sp_d",
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt16_mvt24wday03",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24wday03"
     ],
     "attachments": [
       "pt16_sp_d",
@@ -20937,7 +22248,28 @@
       "samurai02",
       "pirate01",
       "brazil02",
-      "meteorgold02"
+      "meteorgold02",
+      "25rating03",
+      "zsd02"
+    ],
+    "attachments": [
+      "sc02",
+      "sc03",
+      "sp05",
+      "bn05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt21_25rating03",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25rating03"
     ],
     "attachments": [
       "sc02",
@@ -21022,9 +22354,12 @@
       "samurai02",
       "pirate01",
       "brazil02",
-      "meteorgold02"
+      "meteorgold02",
+      "25rating03",
+      "zsd02"
     ],
     "attachments": [
+      "sc02",
       "sc03",
       "sp05",
       "bn05",
@@ -21411,6 +22746,27 @@
     "ammoType": "bullet_pt",
     "skins": [
       "cny02"
+    ],
+    "attachments": [
+      "ps01",
+      "rds01",
+      "rds07",
+      "rds02",
+      "bn05",
+      "sp05",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt25_mvt24fool04",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24fool04"
     ],
     "attachments": [
       "ps01",
@@ -22346,7 +23702,6 @@
       "rds23_holo01",
       "muzzle_flash_effect",
       "muzzle_flash_light",
-      "pt33_holo01_sa01",
       "perk_a",
       "perk_b",
       "perk_c"
@@ -22794,7 +24149,10 @@
       "bp07",
       "an08",
       "desert00002",
-      "usday22"
+      "usday22",
+      "25bp03pinup",
+      "25pve06",
+      "25rating06"
     ],
     "attachments": [
       "pt35_rds_d",
@@ -22804,6 +24162,63 @@
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "pt35_desert00002_sa01",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt35_25bp03pinup",
+    "category": "pt",
+    "ammoType": "bullet_shg_p",
+    "skins": [
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "pt35_rds_d",
+      "rds01",
+      "rds07",
+      "rds02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt35_25pve06",
+    "category": "pt",
+    "ammoType": "bullet_shg_p",
+    "skins": [
+      "25pve06"
+    ],
+    "attachments": [
+      "pt35_rds_d",
+      "rds01",
+      "rds07",
+      "rds02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt35_25rating06",
+    "category": "pt",
+    "ammoType": "bullet_shg_p",
+    "skins": [
+      "25rating06"
+    ],
+    "attachments": [
+      "pt35_rds_d",
+      "rds01",
+      "rds07",
+      "rds02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
       "perk_a",
       "perk_b",
       "perk_c"
@@ -22880,7 +24295,10 @@
       "bp07",
       "an08",
       "desert00002",
-      "usday22"
+      "usday22",
+      "25bp03pinup",
+      "25pve06",
+      "25rating06"
     ],
     "attachments": [
       "pt35_rds_d",
@@ -24830,6 +26248,42 @@
     ]
   },
   {
+    "name": "pt45_mvt23unity10",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt23unity10"
+    ],
+    "attachments": [
+      "sp05",
+      "bn05",
+      "pt45_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt45_mvt24victory",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24victory"
+    ],
+    "attachments": [
+      "sp05",
+      "bn05",
+      "pt45_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "pt45_pollution2403",
     "category": "pt",
     "ammoType": "bullet_pt",
@@ -25181,6 +26635,21 @@
     ]
   },
   {
+    "name": "pt48_mvt24cny",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24cny"
+    ],
+    "attachments": [
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "pt48_patrick24",
     "category": "pt",
     "ammoType": "bullet_pt",
@@ -25260,7 +26729,26 @@
       "winter2402_01",
       "mink2404",
       "mvt24twitch03",
-      "mvt24plaguedoc05"
+      "mvt24plaguedoc05",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt49_25bp03pinup",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "pt49_is_d",
@@ -25299,8 +26787,6 @@
       "bone2309_01"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25349,7 +26835,8 @@
       "winter2402_01",
       "mink2404",
       "mvt24twitch03",
-      "mvt24plaguedoc05"
+      "mvt24plaguedoc05",
+      "25bp03pinup"
     ],
     "attachments": [
       "pt49_is_d",
@@ -25380,8 +26867,6 @@
       "mvt24plaguedoc05"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25405,8 +26890,6 @@
       "mvt24plaguedoc05"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25443,10 +26926,6 @@
       "kraken2306_01"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
-      "pt49_teamoftheyear23_sa01",
-      "pt49_teamoftheyear23_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25477,7 +26956,26 @@
       "winter2402_01",
       "mink2404",
       "mvt24twitch03",
-      "mvt24plaguedoc05"
+      "mvt24plaguedoc05",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt49_l_25bp03pinup",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "pt49_is_d",
@@ -25516,8 +27014,6 @@
       "bone2309_01"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25572,10 +27068,6 @@
       "kraken2306_01"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
-      "pt49_teamoftheyear23_sa01",
-      "pt49_teamoftheyear23_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25592,6 +27084,42 @@
     "ammoType": "bullet_pt",
     "skins": [
       "mink2404"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt49_l_mvt24plaguedoc05",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24plaguedoc05"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt49_l_mvt24twitch03",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24twitch03"
     ],
     "attachments": [
       "pt49_is_d",
@@ -25648,8 +27176,6 @@
       "somalia2308"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25733,6 +27259,42 @@
     ]
   },
   {
+    "name": "pt49_mvt24plaguedoc05",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24plaguedoc05"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt49_mvt24twitch03",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24twitch03"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "pt49_north2312",
     "category": "pt",
     "ammoType": "bullet_pt",
@@ -25788,7 +27350,26 @@
       "winter2402_01",
       "mink2404",
       "mvt24twitch03",
-      "mvt24plaguedoc05"
+      "mvt24plaguedoc05",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt49_r_25bp03pinup",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "pt49_is_d",
@@ -25827,8 +27408,6 @@
       "bone2309_01"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25883,10 +27462,6 @@
       "kraken2306_01"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
-      "pt49_teamoftheyear23_sa01",
-      "pt49_teamoftheyear23_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -25903,6 +27478,42 @@
     "ammoType": "bullet_pt",
     "skins": [
       "mink2404"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt49_r_mvt24plaguedoc05",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24plaguedoc05"
+    ],
+    "attachments": [
+      "pt49_is_d",
+      "pt49_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "pt49_gp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt49_r_mvt24twitch03",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24twitch03"
     ],
     "attachments": [
       "pt49_is_d",
@@ -25959,8 +27570,6 @@
       "somalia2308"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -26033,8 +27642,6 @@
       "somalia2308"
     ],
     "attachments": [
-      "pt49_dpass2212_01_sa01",
-      "pt49_dpass2212_01_sa02",
       "pt49_is_d",
       "pt49_rds_d",
       "muzzle_flash_effect",
@@ -26298,6 +27905,40 @@
     ]
   },
   {
+    "name": "pt50_mvt23hidalgo10",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt23hidalgo10"
+    ],
+    "attachments": [
+      "pt50_rds_d",
+      "pt50_ps_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt50_mvt24humourist02",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "mvt24humourist02"
+    ],
+    "attachments": [
+      "pt50_rds_d",
+      "pt50_ps_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "pt50_north2312",
     "category": "pt",
     "ammoType": "bullet_pt",
@@ -26349,6 +27990,22 @@
     ]
   },
   {
+    "name": "pt51_mvt",
+    "category": "pt",
+    "ammoType": "bullet_pt_snowbl_mvt",
+    "skins": [
+      "default"
+    ],
+    "attachments": [
+      "pt51_mvt_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "pt52",
     "category": "pt",
     "ammoType": "bullet_pt",
@@ -26363,7 +28020,31 @@
       "coil2409",
       "gryphon2411",
       "rating2412",
-      "underground2412"
+      "underground2412",
+      "25pve03"
+    ],
+    "attachments": [
+      "rds02",
+      "rds01",
+      "rds07",
+      "pt52_rds_d",
+      "pt52_sp_d",
+      "pt52_sc_d",
+      "pt52_gp02_d",
+      "pt52_gp01_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt52_25pve03",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25pve03"
     ],
     "attachments": [
       "rds02",
@@ -26419,7 +28100,8 @@
       "coil2409",
       "gryphon2411",
       "rating2412",
-      "underground2412"
+      "underground2412",
+      "25pve03"
     ],
     "attachments": [
       "rds02",
@@ -26475,7 +28157,31 @@
       "coil2409",
       "gryphon2411",
       "rating2412",
-      "underground2412"
+      "underground2412",
+      "25pve03"
+    ],
+    "attachments": [
+      "rds02",
+      "rds01",
+      "rds07",
+      "pt52_rds_d",
+      "pt52_sp_d",
+      "pt52_sc_d",
+      "pt52_gp02_d",
+      "pt52_gp01_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt52_l_25pve03",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25pve03"
     ],
     "attachments": [
       "rds02",
@@ -26531,7 +28237,8 @@
       "coil2409",
       "gryphon2411",
       "rating2412",
-      "underground2412"
+      "underground2412",
+      "25pve03"
     ],
     "attachments": [
       "rds02",
@@ -26725,7 +28432,8 @@
       "coil2409",
       "gryphon2411",
       "rating2412",
-      "underground2412"
+      "underground2412",
+      "25pve03"
     ],
     "attachments": [
       "rds02",
@@ -26790,6 +28498,29 @@
     ]
   },
   {
+    "name": "pt52_r_25pve03",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25pve03"
+    ],
+    "attachments": [
+      "rds02",
+      "rds01",
+      "rds07",
+      "pt52_rds_d",
+      "pt52_sp_d",
+      "pt52_sc_d",
+      "pt52_gp02_d",
+      "pt52_gp01_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "pt52_r_coil2409",
     "category": "pt",
     "ammoType": "bullet_pt",
@@ -26827,7 +28558,8 @@
       "coil2409",
       "gryphon2411",
       "rating2412",
-      "underground2412"
+      "underground2412",
+      "25pve03"
     ],
     "attachments": [
       "rds02",
@@ -27099,6 +28831,58 @@
     ]
   },
   {
+    "name": "pt53",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "default",
+      "grind01",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "pt53_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt53_25bp06shark",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "pt53_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "pt53_gold01",
+    "category": "pt",
+    "ammoType": "bullet_pt",
+    "skins": [
+      "gold01",
+      "grind01",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "pt53_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "pt66",
     "category": "pt",
     "ammoType": "bullet_pt",
@@ -27231,7 +29015,9 @@
       "bullet_stimboost_summer24_skin",
       "bullet_stimboost_thunder2409_skin",
       "bullet_stimboost_hlw24_skin",
-      "bullet_stimboost_underground2412_skin"
+      "bullet_stimboost_underground2412_skin",
+      "bullet_stimboost_mvt25stval02_skin",
+      "bullet_stimboost_25bp03pinup_skin"
     ],
     "attachments": [
       "perk_a",
@@ -27352,7 +29138,9 @@
       "smokegrenade01_mvt24sunset07_skin",
       "smokegrenade01_rating2409_skin",
       "smokegrenade01_mvt24operator09_skin",
-      "smokegrenade01_rating2412_skin"
+      "smokegrenade01_rating2412_skin",
+      "smokegrenade01_mvt25victory05_skin",
+      "smokegrenade01_mvt25op05lizards_skin"
     ],
     "attachments": [
       "perk_a",
@@ -27398,6 +29186,83 @@
     "name": "sg01_md_set10_c",
     "category": "sg",
     "ammoType": "smokegrenade01_md_set10_c",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24anniversary",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24anniversary",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24defend02",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24defend02",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24esport01",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24esport01",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24operator09",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24operator09",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24rday",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24rday",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24stval02",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24stval02",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24summer",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24summer",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24sunset07",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24sunset07",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt24wday03",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt24wday03",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt25op05lizards",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt25op05lizards",
+    "skins": [],
+    "attachments": []
+  },
+  {
+    "name": "sg01_mvt25victory05",
+    "category": "sg",
+    "ammoType": "smokegrenade01_mvt25victory05",
     "skins": [],
     "attachments": []
   },
@@ -28692,9 +30557,65 @@
       "kra01",
       "camo08",
       "swarm03",
-      "anniversary23"
+      "anniversary23",
+      "25bp03pinup",
+      "25summer06"
     ],
     "attachments": [
+      "mount02",
+      "charm",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sp06",
+      "sc02",
+      "sc04",
+      "bn01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg05_25bp03pinup",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sp06",
+      "sc02",
+      "sc04",
+      "bn01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg05_25summer06",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25summer06"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
       "rds01",
       "rds07",
       "rds03",
@@ -28719,6 +30640,8 @@
       "anniversary23"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "rds01",
       "rds07",
       "rds03",
@@ -28743,6 +30666,8 @@
       "camo08"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "rds01_camo08",
       "rds07_camo08",
       "rds03_camo08",
@@ -28768,9 +30693,13 @@
       "kra01",
       "camo08",
       "swarm03",
-      "anniversary23"
+      "anniversary23",
+      "25bp03pinup",
+      "25summer06"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "rds01",
       "rds07",
       "rds03",
@@ -28795,6 +30724,8 @@
       "kra01"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "rds01",
       "rds07",
       "rds03",
@@ -28819,6 +30750,8 @@
       "swarm03"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "rds01_dark01",
       "rds07_dark01",
       "rds03_dark01",
@@ -28841,6 +30774,8 @@
     "ammoType": "bullet_shg",
     "skins": [],
     "attachments": [
+      "mount02",
+      "charm",
       "rds01",
       "rds07",
       "rds03",
@@ -28982,9 +30917,71 @@
     "skins": [
       "default",
       "viet01",
-      "mars02"
+      "mars02",
+      "25fool04",
+      "mvt25spring04",
+      "25spring04",
+      "zsd01",
+      "zsd02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
+      "shg07_is_d",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "shg07_sa01",
+      "sp06",
+      "sc02",
+      "sc04",
+      "bn01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg07_25fool04",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25fool04"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "shg07_is_d",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sp06",
+      "sc02",
+      "sc04",
+      "bn01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg07_25spring04",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25spring04"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
       "shg07_is_d",
       "rds01",
       "rds07",
@@ -29010,6 +31007,8 @@
       "crown"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "shg07_is_d",
       "rds01",
       "rds07",
@@ -29035,6 +31034,8 @@
       "crown02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "shg07_crown02_is_d",
       "rds01",
       "rds07",
@@ -29059,15 +31060,25 @@
     "skins": [
       "gold01",
       "viet01",
-      "mars02"
+      "mars02",
+      "25fool04",
+      "mvt25spring04",
+      "25spring04",
+      "zsd01",
+      "zsd02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "shg07_is_d",
       "rds01",
-      "rds02",
+      "rds07",
       "rds03",
       "rds04",
+      "rds02",
+      "shg07_sa01",
       "sp06",
+      "sc02",
       "sc04",
       "bn01",
       "muzzle_flash_effect",
@@ -29085,7 +31096,36 @@
       "mars02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "shg07_mars02_is_d",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sp06",
+      "sc02",
+      "sc04",
+      "bn01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg07_mvt25spring04",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "mvt25spring04"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "shg07_is_d",
       "rds01",
       "rds07",
       "rds03",
@@ -29110,6 +31150,8 @@
       "viet01"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "shg07_is_d",
       "rds01",
       "rds07",
@@ -29133,6 +31175,8 @@
     "ammoType": "bullet_shg",
     "skins": [],
     "attachments": [
+      "mount01",
+      "charm",
       "shg07_is_d",
       "rds01",
       "rds07",
@@ -29142,6 +31186,7 @@
       "sp06",
       "sc02",
       "sc04",
+      "bn01",
       "shg07_sa01",
       "muzzle_flash_effect",
       "muzzle_flash_light",
@@ -29158,6 +31203,8 @@
       "zsd02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "shg07_is_d",
       "rds01",
       "rds07",
@@ -29629,9 +31676,38 @@
       "camo07",
       "set01",
       "clr01",
-      "bra05"
+      "bra05",
+      "25summer07"
     ],
     "attachments": [
+      "mount01",
+      "charm",
+      "shg13_is_d",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sp06",
+      "sc02",
+      "sc04",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg13_25summer07",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25summer07"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
       "shg13_is_d",
       "rds01",
       "rds07",
@@ -29656,6 +31732,8 @@
       "bra04"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "shg13_bra04_is_d",
       "rds01",
       "rds07",
@@ -29680,6 +31758,8 @@
       "bra05"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "shg13_bra04_is_d",
       "rds01",
       "rds07",
@@ -29702,6 +31782,8 @@
     "ammoType": "bullet_shg",
     "skins": [],
     "attachments": [
+      "mount01",
+      "charm",
       "shg13_is_d",
       "rds01",
       "rds07",
@@ -29846,20 +31928,6 @@
       "perk_a",
       "perk_b",
       "perk_c"
-    ]
-  },
-  {
-    "name": "shg21_zsd01",
-    "category": "shg",
-    "ammoType": "bullet_shg_zsd01",
-    "skins": [],
-    "attachments": [
-      "sp06",
-      "sc02",
-      "sc04",
-      "bn01",
-      "muzzle_flash_effect",
-      "muzzle_flash_light"
     ]
   },
   {
@@ -31119,7 +33187,60 @@
       "camo08",
       "camo09",
       "jp01",
-      "swarm03"
+      "swarm03",
+      "winter2502",
+      "25rating03",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sp06",
+      "sc02",
+      "sc04",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg40_25bp06shark",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sp06",
+      "sc02",
+      "sc04",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg40_25rating03",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25rating03"
     ],
     "attachments": [
       "mount02",
@@ -31226,7 +33347,10 @@
       "camo08",
       "camo09",
       "jp01",
-      "swarm03"
+      "swarm03",
+      "winter2502",
+      "25rating03",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -31422,6 +33546,31 @@
       "sp06_dark01",
       "sc02_dark01",
       "sc04_dark01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg40_winter2502",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "winter2502"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sp06",
+      "sc02",
+      "sc04",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -32914,7 +35063,37 @@
       "samurai02",
       "swarm02",
       "heist03",
-      "tape01_console"
+      "tape01_console",
+      "25rating06",
+      "bronze01_console"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg50_is_d",
+      "shg50_rds_d",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "sc08",
+      "sp06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "muzzle_heatHazeNSmoke",
+      "perk_a",
+      "perk_b",
+      "perk_c",
+      "shg50_tape01_console_sa01"
+    ]
+  },
+  {
+    "name": "shg50_25rating06",
+    "category": "shg",
+    "ammoType": "bullet_slug",
+    "skins": [
+      "25rating06"
     ],
     "attachments": [
       "mount02",
@@ -32932,8 +35111,7 @@
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c",
-      "shg50_tape01_console_sa01"
+      "perk_c"
     ]
   },
   {
@@ -32959,7 +35137,8 @@
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -32985,7 +35164,8 @@
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -33005,12 +35185,14 @@
       "rds03",
       "rds04",
       "rds02",
+      "sc08",
+      "sp06",
       "muzzle_flash_effect",
       "muzzle_flash_light",
-      "muzzle_heatHazeNSmoke",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -33036,7 +35218,8 @@
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -33052,15 +35235,17 @@
       "samurai02",
       "swarm02",
       "heist03",
-      "tape01_console"
+      "tape01_console",
+      "25rating06",
+      "bronze01_console"
     ],
     "attachments": [
-      "shg50_tape01_console_sa01",
       "mount02",
       "charm",
       "shg50_is_d",
       "shg50_rds_d",
       "rds01",
+      "rds07",
       "rds03",
       "rds04",
       "rds02",
@@ -33070,7 +35255,8 @@
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -33096,7 +35282,8 @@
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -33122,7 +35309,8 @@
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -33148,7 +35336,8 @@
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -33163,18 +35352,19 @@
       "charm",
       "shg50_is_d",
       "shg50_rds_d",
-      "rds01_dark01",
-      "rds07_dark01",
-      "rds03_dark01",
-      "rds04_dark01",
-      "rds02_dark01",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
       "sc08",
-      "sp06_dark01",
+      "sp06",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -33198,10 +35388,10 @@
       "sp06",
       "muzzle_flash_effect",
       "muzzle_flash_light",
-      "shg50_tape01_console_sa01",
       "perk_a",
       "perk_b",
-      "perk_c"
+      "perk_c",
+      "shg50_tape01_console_sa01"
     ]
   },
   {
@@ -34577,7 +36767,55 @@
       "hlw03",
       "swarm03",
       "heist02",
-      "addpack00001"
+      "addpack00001",
+      "25bp03pinup",
+      "25pve06"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "shg55_sp_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg55_25bp03pinup",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "shg55_sp_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg55_25pve06",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25pve06"
     ],
     "attachments": [
       "mount02",
@@ -34652,7 +36890,9 @@
       "hlw03",
       "swarm03",
       "heist02",
-      "addpack00001"
+      "addpack00001",
+      "25bp03pinup",
+      "25pve06"
     ],
     "attachments": [
       "mount02",
@@ -35371,6 +37611,35 @@
     ]
   },
   {
+    "name": "shg58_mvt23gunsmith09",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "mvt23gunsmith09"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "shg58_rds_d",
+      "rds01",
+      "rds07",
+      "rds03",
+      "rds04",
+      "rds02",
+      "shg58_sp_d",
+      "sc02",
+      "sc04",
+      "sp06",
+      "shg58_gp01_d",
+      "shg58_gp02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "shg58_pollution2403",
     "category": "shg",
     "ammoType": "bullet_shg",
@@ -35464,7 +37733,50 @@
     "skins": [
       "default",
       "snowstorm01",
-      "holo01"
+      "holo01",
+      "mvt25victory05",
+      "25spring05",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg59_rds09",
+      "sp06",
+      "sc04",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg59_25bp06shark",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg59_rds09",
+      "sp06",
+      "sc04",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg59_25spring05",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25spring05"
     ],
     "attachments": [
       "mount02",
@@ -35486,7 +37798,10 @@
     "skins": [
       "gold01",
       "snowstorm01",
-      "holo01"
+      "holo01",
+      "mvt25victory05",
+      "25spring05",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -35513,6 +37828,26 @@
       "mount02",
       "charm",
       "rds23_holo01",
+      "sp06",
+      "sc04",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg59_mvt25victory05",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "mvt25victory05"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg59_rds09",
       "sp06",
       "sc04",
       "muzzle_flash_effect",
@@ -36785,6 +39120,28 @@
     ]
   },
   {
+    "name": "shg69_mvt23temp12",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "mvt23temp12"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg69_is_d",
+      "shg69_rds_d",
+      "shg69_is_d_folded",
+      "shg69_sp_d",
+      "shg69_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "shg69_north2312",
     "category": "shg",
     "ammoType": "bullet_shg",
@@ -37072,7 +39429,29 @@
       "mvt24anniversary",
       "bandarlog2406",
       "inx24sales05",
-      "winter2412"
+      "winter2412",
+      "25spring03"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg71_is_d",
+      "shg71_rds_d",
+      "shg71_sp_d",
+      "shg71_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg71_25spring03",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25spring03"
     ],
     "attachments": [
       "mount02",
@@ -37167,7 +39546,29 @@
       "mvt24anniversary",
       "bandarlog2406",
       "inx24sales05",
-      "winter2412"
+      "winter2412",
+      "25spring03"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg71_is_d",
+      "shg71_rds_d",
+      "shg71_sp_d",
+      "shg71_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg71_mvt24anniversary",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "mvt24anniversary"
     ],
     "attachments": [
       "mount02",
@@ -37282,7 +39683,28 @@
       "thunder2409",
       "coil2409",
       "hlw24",
-      "rat2412"
+      "rat2412",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg72_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "shg72_ammo_01",
+      "shg72_ammo_02",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg72_25bp06shark",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -37332,7 +39754,8 @@
       "thunder2409",
       "coil2409",
       "hlw24",
-      "rat2412"
+      "rat2412",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -37353,6 +39776,26 @@
     "ammoType": "bullet_shg",
     "skins": [
       "hlw24"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "shg72_rds_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "shg72_ammo_01",
+      "shg72_ammo_02",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg72_mvt24summer",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "mvt24summer"
     ],
     "attachments": [
       "mount02",
@@ -37476,7 +39919,33 @@
       "mastery01",
       "bavaria2409",
       "bf24",
-      "underground2412"
+      "underground2412",
+      "25pve03"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "shg73_is_d",
+      "shg73_rds_d",
+      "rds04",
+      "rds02",
+      "shg73_sp_d",
+      "shg73_ugl_d",
+      "shg73_mag01_d",
+      "shg73_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg73_25pve03",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25pve03"
     ],
     "attachments": [
       "mount01",
@@ -37555,7 +40024,8 @@
       "mastery01",
       "bavaria2409",
       "bf24",
-      "underground2412"
+      "underground2412",
+      "25pve03"
     ],
     "attachments": [
       "mount01",
@@ -37607,7 +40077,8 @@
     "skins": [
       "default",
       "mastery01",
-      "cat2501"
+      "cat2501",
+      "25bp03pinup"
     ],
     "attachments": [
       "mount02",
@@ -37618,9 +40089,8 @@
       "rds03",
       "rds04",
       "rds02",
-      "silencer",
-      "shg74_sc_d",
-      "shg74_sp_d",
+      "shg74_sp01_d",
+      "shg74_sp02_d",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -37644,9 +40114,8 @@
       "rds03",
       "rds04",
       "rds02",
-      "silencer",
-      "shg74_sc_d",
-      "shg74_sp_d",
+      "shg74_sp01_d",
+      "shg74_sp02_d",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -37670,9 +40139,8 @@
       "rds03",
       "rds04",
       "rds02",
-      "silencer",
-      "shg74_sc_d",
-      "shg74_sp_d",
+      "shg74_sp01_d",
+      "shg74_sp02_d",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -37687,7 +40155,8 @@
     "skins": [
       "gold01",
       "mastery01",
-      "cat2501"
+      "cat2501",
+      "25bp03pinup"
     ],
     "attachments": [
       "mount02",
@@ -37698,9 +40167,90 @@
       "rds03",
       "rds04",
       "rds02",
-      "silencer",
-      "shg74_sc_d",
-      "shg74_sp_d",
+      "shg74_sp01_d",
+      "shg74_sp02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg75",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "default",
+      "grind01",
+      "25na06warland"
+    ],
+    "attachments": [
+      "mount05",
+      "charm",
+      "shg75_is_d",
+      "rds07",
+      "rds04",
+      "rds02",
+      "shg75_gp_d",
+      "shg75_ls_d",
+      "shg75_sp01_d",
+      "shg75_sp02_d",
+      "shg75_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg75_25na06warland",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "25na06warland"
+    ],
+    "attachments": [
+      "mount05",
+      "charm",
+      "shg75_is_d",
+      "rds07",
+      "rds04",
+      "rds02",
+      "shg75_gp_d",
+      "shg75_ls_d",
+      "shg75_sp01_d",
+      "shg75_sp02_d",
+      "shg75_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "shg75_gold01",
+    "category": "shg",
+    "ammoType": "bullet_shg",
+    "skins": [
+      "gold01",
+      "grind01",
+      "25na06warland"
+    ],
+    "attachments": [
+      "mount05",
+      "charm",
+      "shg75_is_d",
+      "rds07",
+      "rds04",
+      "rds02",
+      "shg75_gp_d",
+      "shg75_ls_d",
+      "shg75_sp01_d",
+      "shg75_sp02_d",
+      "shg75_sc_d",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -38845,7 +41395,8 @@
       "camo08",
       "camo09",
       "brazil02",
-      "anniversary23"
+      "anniversary23",
+      "winter2502"
     ],
     "attachments": [
       "mount02",
@@ -39036,7 +41587,8 @@
       "camo08",
       "camo09",
       "brazil02",
-      "anniversary23"
+      "anniversary23",
+      "winter2502"
     ],
     "attachments": [
       "mount02",
@@ -39068,6 +41620,37 @@
     "ammoType": "bullet_smg",
     "skins": [
       "viet01"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "smg10_is_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds07",
+      "rds02",
+      "gp03",
+      "gp01",
+      "gpp02",
+      "sp02",
+      "sc02",
+      "sc01",
+      "bn03",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg10_winter2502",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "winter2502"
     ],
     "attachments": [
       "mount02",
@@ -40372,9 +42955,45 @@
       "set01",
       "clr01",
       "ec02",
-      "lava01"
+      "lava01",
+      "25summer06"
     ],
     "attachments": [
+      "mount01",
+      "charm",
+      "smg31_is_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds07",
+      "rds02",
+      "smg31_gp_d",
+      "gp03",
+      "gp01",
+      "gpp02",
+      "smg31_sp_d",
+      "sp02",
+      "sc02",
+      "sc01",
+      "bn03",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg31_25summer06",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25summer06"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
       "smg31_is_d",
       "as06",
       "as05",
@@ -40406,6 +43025,8 @@
       "ec02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "smg31_ec02_is_d",
       "as06",
       "as05",
@@ -40443,20 +43064,26 @@
       "set01",
       "clr01",
       "ec02",
-      "lava01"
+      "lava01",
+      "25summer06"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "smg31_is_d",
       "as06",
       "as05",
       "as03",
       "rds01",
+      "rds07",
       "rds02",
       "smg31_gp_d",
+      "gp03",
       "gp01",
       "gpp02",
       "smg31_sp_d",
       "sp02",
+      "sc02",
       "sc01",
       "bn03",
       "muzzle_flash_effect",
@@ -40474,6 +43101,8 @@
       "lava01"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "smg31_lava01_is_d",
       "as06",
       "as05",
@@ -40654,7 +43283,65 @@
       "rad01",
       "ice01",
       "mars02",
-      "ec03"
+      "ec03",
+      "25rating03",
+      "25pve06"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg33_is_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds07",
+      "rds02",
+      "gp03",
+      "gp01",
+      "gpp02",
+      "smg33_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg33_25pve06",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25pve06"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg33_is_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds07",
+      "rds02",
+      "gp03",
+      "gp01",
+      "gpp02",
+      "smg33_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg33_25rating03",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25rating03"
     ],
     "attachments": [
       "mount01",
@@ -40743,7 +43430,9 @@
       "rad01",
       "ice01",
       "mars02",
-      "ec03"
+      "ec03",
+      "25rating03",
+      "25pve06"
     ],
     "attachments": [
       "mount01",
@@ -41216,9 +43905,44 @@
       "jp01",
       "ice01",
       "samurai02",
-      "dragon01"
+      "dragon01",
+      "25spring03"
     ],
     "attachments": [
+      "mount02",
+      "charm",
+      "smg38_is_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds07",
+      "rds02",
+      "gp03",
+      "gp01",
+      "gpp02",
+      "smg38_sp_d",
+      "sp02",
+      "sc02",
+      "sc01",
+      "bn03",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg38_25spring03",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25spring03"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06",
       "as05",
@@ -41249,6 +43973,8 @@
       "camo08"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06_camo08",
       "as05_camo08",
@@ -41279,6 +44005,8 @@
       "camo09"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06_camo09",
       "as05_camo09",
@@ -41309,6 +44037,8 @@
       "dragon01"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06",
       "as05",
@@ -41345,9 +44075,12 @@
       "jp01",
       "ice01",
       "samurai02",
-      "dragon01"
+      "dragon01",
+      "25spring03"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06",
       "as05",
@@ -41378,6 +44111,8 @@
       "ice01"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06",
       "as05",
@@ -41408,6 +44143,8 @@
       "jp01"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06_dark01",
       "as05_dark01",
@@ -41438,6 +44175,8 @@
       "rad01"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06",
       "as05",
@@ -41468,6 +44207,8 @@
       "samurai02"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_samurai02_is_d",
       "as06_dark01",
       "as05_dark01",
@@ -41498,6 +44239,8 @@
       "set05"
     ],
     "attachments": [
+      "mount02",
+      "charm",
       "smg38_is_d",
       "as06",
       "as05",
@@ -45243,6 +47986,34 @@
     ]
   },
   {
+    "name": "smg51_mvt23gunsmith09",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt23gunsmith09"
+    ],
+    "attachments": [
+      "mount04",
+      "charm",
+      "smg51_rds_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds02",
+      "smg51_sp_d",
+      "smg51_sc_d",
+      "gp03",
+      "gp01",
+      "gpp02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "smg51_rank09",
     "category": "smg",
     "ammoType": "bullet_smg",
@@ -45495,7 +48266,66 @@
       "desert00004",
       "redstripes01",
       "realwars01",
-      "sales01"
+      "sales01",
+      "mvt25spring04",
+      "25spring04",
+      "25rating06"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg53_rds_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds02",
+      "smg53_sc_d",
+      "smg53_gp_d",
+      "gp03",
+      "gp01",
+      "gpp02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg53_25rating06",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25rating06"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg53_rds_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds02",
+      "smg53_sc_d",
+      "smg53_gp_d",
+      "gp03",
+      "gp01",
+      "gpp02",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg53_25spring04",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25spring04"
     ],
     "attachments": [
       "mount01",
@@ -45586,7 +48416,10 @@
       "desert00004",
       "redstripes01",
       "realwars01",
-      "sales01"
+      "sales01",
+      "mvt25spring04",
+      "25spring04",
+      "25rating06"
     ],
     "attachments": [
       "mount01",
@@ -45599,6 +48432,7 @@
       "rds02",
       "smg53_sc_d",
       "smg53_gp_d",
+      "gp03",
       "gp01",
       "gpp02",
       "muzzle_flash_effect",
@@ -45630,6 +48464,34 @@
       "gp03_dark01",
       "gp01_dark01",
       "gpp02_dark01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg53_mvt25spring04",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt25spring04"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg53_rds_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds02",
+      "smg53_sc_d",
+      "smg53_gp_d",
+      "gp03",
+      "gp01",
+      "gpp02",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -47740,7 +50602,8 @@
       "tomb2306",
       "bone2309_01",
       "winter2312_02",
-      "pollution2403"
+      "pollution2403",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -47756,6 +50619,31 @@
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "smg69_bone2309_01_sa01",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg69_25bp06shark",
+    "category": "smg",
+    "ammoType": "bullet_ar",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "smg69_is_d",
+      "smg69_rds_d",
+      "smg69_as_d",
+      "smg69_mag01_d",
+      "smg69_mag02_d",
+      "smg69_sc_d",
+      "smg69_sp_d",
+      "smg69_ugl_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
       "perk_a",
       "perk_b",
       "perk_c"
@@ -47800,7 +50688,8 @@
       "tomb2306",
       "bone2309_01",
       "winter2312_02",
-      "pollution2403"
+      "pollution2403",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -48329,6 +51218,28 @@
     ]
   },
   {
+    "name": "smg70_l_mvt23hidalgo10",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt23hidalgo10"
+    ],
+    "attachments": [
+      "smg70_is_d",
+      "smg70_rds_d",
+      "smg70_sp01_d",
+      "smg70_sp02_d",
+      "smg70_sc_d",
+      "smg70_gp_d",
+      "smg70_ls_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "smg70_l_north2312",
     "category": "smg",
     "ammoType": "bullet_smg",
@@ -48401,6 +51312,30 @@
     "ammoType": "bullet_smg",
     "skins": [
       "midgard2309"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg70_is_d",
+      "smg70_rds_d",
+      "smg70_sp01_d",
+      "smg70_sp02_d",
+      "smg70_sc_d",
+      "smg70_gp_d",
+      "smg70_ls_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg70_mvt23hidalgo10",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt23hidalgo10"
     ],
     "attachments": [
       "mount01",
@@ -48642,6 +51577,30 @@
     ]
   },
   {
+    "name": "smg70_r_mvt23hidalgo10",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt23hidalgo10"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg70_is_d",
+      "smg70_rds_d",
+      "smg70_sp01_d",
+      "smg70_sp02_d",
+      "smg70_sc_d",
+      "smg70_gp_d",
+      "smg70_ls_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "smg70_r_north2312",
     "category": "smg",
     "ammoType": "bullet_smg",
@@ -48774,7 +51733,35 @@
       "north2312",
       "howl2312",
       "winter2402_02",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount04",
+      "charm",
+      "smg71_is_d",
+      "smg71_rds_d",
+      "smg71_sp_d",
+      "smg71_sc_d",
+      "smg71_gp01_d",
+      "smg71_gp02_d",
+      "smg71_mag01_d",
+      "smg71_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "smg71_pic_rail01",
+      "smg71_pic_rail02",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg71_25bp03pinup",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "mount04",
@@ -48861,7 +51848,8 @@
       "north2312",
       "howl2312",
       "winter2402_02",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25bp03pinup"
     ],
     "attachments": [
       "mount04",
@@ -48921,7 +51909,34 @@
       "north2312",
       "howl2312",
       "winter2402_02",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount04",
+      "smg71_is_d",
+      "smg71_rds_d",
+      "smg71_sp_d",
+      "smg71_sc_d",
+      "smg71_gp01_d",
+      "smg71_gp02_d",
+      "smg71_mag01_d",
+      "smg71_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "smg71_pic_rail01",
+      "smg71_pic_rail02",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg71_l_25bp03pinup",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "mount04",
@@ -49005,7 +52020,8 @@
       "north2312",
       "howl2312",
       "winter2402_02",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25bp03pinup"
     ],
     "attachments": [
       "mount04",
@@ -49142,7 +52158,35 @@
       "north2312",
       "howl2312",
       "winter2402_02",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount04",
+      "charm",
+      "smg71_is_d",
+      "smg71_rds_d",
+      "smg71_sp_d",
+      "smg71_sc_d",
+      "smg71_gp01_d",
+      "smg71_gp02_d",
+      "smg71_mag01_d",
+      "smg71_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "smg71_pic_rail01",
+      "smg71_pic_rail02",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg71_r_25bp03pinup",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "mount04",
@@ -49229,7 +52273,8 @@
       "north2312",
       "howl2312",
       "winter2402_02",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25bp03pinup"
     ],
     "attachments": [
       "mount04",
@@ -49375,7 +52420,30 @@
       "reptile2406",
       "summer24",
       "inx24sales05",
-      "thunder2409"
+      "thunder2409",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg72_rds_d",
+      "smg72_sp_d",
+      "smg72_sc_d",
+      "smg72_mag01_d",
+      "smg72_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg72_25bp03pinup",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "mount01",
@@ -49430,7 +52498,8 @@
       "reptile2406",
       "summer24",
       "inx24sales05",
-      "thunder2409"
+      "thunder2409",
+      "25bp03pinup"
     ],
     "attachments": [
       "mount01",
@@ -49453,6 +52522,28 @@
     "ammoType": "bullet_smg",
     "skins": [
       "hiking2402"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg72_rds_d",
+      "smg72_sp_d",
+      "smg72_sc_d",
+      "smg72_mag01_d",
+      "smg72_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg72_mvt24anniversary",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt24anniversary"
     ],
     "attachments": [
       "mount01",
@@ -49592,7 +52683,32 @@
       "coil2409",
       "hlw24",
       "rat2412",
-      "winter2412"
+      "winter2412",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg73_is_d",
+      "smg73_rds_d",
+      "smg73_sp01_d",
+      "smg73_sp02_d",
+      "smg73_gp_d",
+      "smg73_mag01_d",
+      "smg73_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg73_25bp06shark",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp06shark"
     ],
     "attachments": [
       "mount01",
@@ -49672,7 +52788,8 @@
       "coil2409",
       "hlw24",
       "rat2412",
-      "winter2412"
+      "winter2412",
+      "25bp06shark"
     ],
     "attachments": [
       "mount01",
@@ -49728,7 +52845,30 @@
       "coil2409",
       "hlw24",
       "rat2412",
-      "winter2412"
+      "winter2412",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "smg73_is_d",
+      "smg73_rds_d",
+      "smg73_sp01_d",
+      "smg73_sp02_d",
+      "smg73_gp_d",
+      "smg73_mag01_d",
+      "smg73_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg73_l_25bp06shark",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp06shark"
     ],
     "attachments": [
       "smg73_is_d",
@@ -49802,7 +52942,8 @@
       "coil2409",
       "hlw24",
       "rat2412",
-      "winter2412"
+      "winter2412",
+      "25bp06shark"
     ],
     "attachments": [
       "smg73_is_d",
@@ -49825,6 +52966,28 @@
     "ammoType": "bullet_smg",
     "skins": [
       "hlw24"
+    ],
+    "attachments": [
+      "smg73_is_d",
+      "smg73_rds_d",
+      "smg73_sp01_d",
+      "smg73_sp02_d",
+      "smg73_gp_d",
+      "smg73_mag01_d",
+      "smg73_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg73_l_mvt24summer",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt24summer"
     ],
     "attachments": [
       "smg73_is_d",
@@ -49886,6 +53049,30 @@
     ]
   },
   {
+    "name": "smg73_mvt24summer",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt24summer"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg73_is_d",
+      "smg73_rds_d",
+      "smg73_sp01_d",
+      "smg73_sp02_d",
+      "smg73_gp_d",
+      "smg73_mag01_d",
+      "smg73_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "smg73_r",
     "category": "smg",
     "ammoType": "bullet_smg",
@@ -49898,7 +53085,8 @@
       "coil2409",
       "hlw24",
       "rat2412",
-      "winter2412"
+      "winter2412",
+      "25bp06shark"
     ],
     "attachments": [
       "mount01",
@@ -49923,6 +53111,30 @@
     "ammoType": "bullet_smg",
     "skins": [
       "rat2412"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg73_is_d",
+      "smg73_rds_d",
+      "smg73_sp01_d",
+      "smg73_sp02_d",
+      "smg73_gp_d",
+      "smg73_mag01_d",
+      "smg73_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg73_r_25bp06shark",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp06shark"
     ],
     "attachments": [
       "mount01",
@@ -50002,7 +53214,8 @@
       "coil2409",
       "hlw24",
       "rat2412",
-      "winter2412"
+      "winter2412",
+      "25bp06shark"
     ],
     "attachments": [
       "mount01",
@@ -50027,6 +53240,30 @@
     "ammoType": "bullet_smg",
     "skins": [
       "hlw24"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg73_is_d",
+      "smg73_rds_d",
+      "smg73_sp01_d",
+      "smg73_sp02_d",
+      "smg73_gp_d",
+      "smg73_mag01_d",
+      "smg73_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg73_r_mvt24summer",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt24summer"
     ],
     "attachments": [
       "mount01",
@@ -50126,7 +53363,59 @@
       "mastery01",
       "gryphon2410",
       "bf24",
-      "underground2412"
+      "underground2412",
+      "25pve03",
+      "25summer07"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg74_rds_d",
+      "rds01",
+      "rds07",
+      "rds02",
+      "smg74_sc_d",
+      "smg74_sp01_d",
+      "smg74_sp02_d",
+      "smg74_ls_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg74_25pve03",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25pve03"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg74_rds_d",
+      "rds01",
+      "rds07",
+      "rds02",
+      "smg74_sc_d",
+      "smg74_sp01_d",
+      "smg74_sp02_d",
+      "smg74_ls_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg74_25summer07",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25summer07"
     ],
     "attachments": [
       "mount01",
@@ -50180,7 +53469,9 @@
       "mastery01",
       "gryphon2410",
       "bf24",
-      "underground2412"
+      "underground2412",
+      "25pve03",
+      "25summer07"
     ],
     "attachments": [
       "mount01",
@@ -50251,18 +53542,303 @@
     ]
   },
   {
-    "name": "smk01",
-    "category": "smk",
-    "ammoType": "dispenser_hp",
+    "name": "smg75",
+    "category": "smg",
+    "ammoType": "bullet_smg",
     "skins": [
-      "dispenser_hp_mastery01_skin",
-      "dispenser_hp_coil2409_skin",
-      "dispenser_hp_rat2412_skin",
-      "dispenser_hp_underground2412_skin"
+      "default",
+      "mastery01",
+      "cat2502",
+      "25bp03pinup"
     ],
     "attachments": [
+      "mount01",
+      "charm",
+      "smg75_rds_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg75_gp01_d",
+      "smg75_gp02_d",
+      "smg75_sp01_d",
+      "smg75_sp02_d",
+      "smg75_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
       "perk_a",
-      "perk_b"
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg75_25bp03pinup",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg75_rds_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg75_gp01_d",
+      "smg75_gp02_d",
+      "smg75_sp01_d",
+      "smg75_sp02_d",
+      "smg75_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg75_cat2502",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "cat2502"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg75_rds_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg75_gp01_d",
+      "smg75_gp02_d",
+      "smg75_sp01_d",
+      "smg75_sp02_d",
+      "smg75_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg75_gold01",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "gold01",
+      "mastery01",
+      "cat2502",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "smg75_rds_d",
+      "as06",
+      "as05",
+      "as03",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg75_gp01_d",
+      "smg75_gp02_d",
+      "smg75_sp01_d",
+      "smg75_sp02_d",
+      "smg75_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg76",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "default",
+      "grind01",
+      "25na05bope",
+      "mvt25victory05",
+      "25spring05",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "mount01",
+      "charm",
+      "smg76_is_d",
+      "smg76_rds01_d",
+      "smg76_rds02_d",
+      "as03",
+      "as05",
+      "as06",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg76_mag01_d",
+      "smg76_mag02_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg76_25bp06shark",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "mount01",
+      "charm",
+      "smg76_is_d",
+      "smg76_rds01_d",
+      "smg76_rds02_d",
+      "as03",
+      "as05",
+      "as06",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg76_mag01_d",
+      "smg76_mag02_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg76_25na05bope",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25na05bope"
+    ],
+    "attachments": [
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "mount01",
+      "charm",
+      "smg76_is_d",
+      "smg76_rds01_d",
+      "smg76_rds02_d",
+      "as03",
+      "as05",
+      "as06",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg76_mag01_d",
+      "smg76_mag02_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg76_25spring05",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "25spring05"
+    ],
+    "attachments": [
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "mount01",
+      "charm",
+      "smg76_is_d",
+      "smg76_rds01_d",
+      "smg76_rds02_d",
+      "as03",
+      "as05",
+      "as06",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg76_mag01_d",
+      "smg76_mag02_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg76_gold01",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "gold01",
+      "grind01",
+      "25na05bope",
+      "mvt25victory05",
+      "25spring05",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "mount01",
+      "charm",
+      "smg76_is_d",
+      "smg76_rds01_d",
+      "smg76_rds02_d",
+      "as03",
+      "as05",
+      "as06",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg76_mag01_d",
+      "smg76_mag02_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "smg76_mvt25victory05",
+    "category": "smg",
+    "ammoType": "bullet_smg",
+    "skins": [
+      "mvt25victory05"
+    ],
+    "attachments": [
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "mount01",
+      "charm",
+      "smg76_is_d",
+      "smg76_rds01_d",
+      "smg76_rds02_d",
+      "as03",
+      "as05",
+      "as06",
+      "rds01",
+      "rds02",
+      "rds07",
+      "smg76_mag01_d",
+      "smg76_mag02_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
     ]
   },
   {
@@ -50697,9 +54273,36 @@
     "skins": [
       "default",
       "cny01",
-      "heist02"
+      "heist02",
+      "25pve03",
+      "xmas"
     ],
     "attachments": [
+      "mount01",
+      "charm",
+      "ss04",
+      "ss06",
+      "ss02",
+      "ss01",
+      "bp01",
+      "bp03",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr04_25pve03",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25pve03"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
@@ -50721,6 +54324,8 @@
       "cny01"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
@@ -50742,6 +54347,8 @@
       "crown"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
@@ -50763,6 +54370,8 @@
       "crown02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
@@ -50783,9 +54392,13 @@
     "skins": [
       "gold01",
       "cny01",
-      "heist02"
+      "heist02",
+      "25pve03",
+      "xmas"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
@@ -50807,6 +54420,8 @@
       "heist02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04_dark01",
       "ss06_dark01",
       "ss02_dark01",
@@ -50824,14 +54439,18 @@
     "name": "sr04_xmas",
     "category": "sr",
     "ammoType": "bullet_sr",
-    "skins": [],
+    "skins": [
+      "xmas"
+    ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
       "ss01",
-      "sr04_bp",
       "bp01",
+      "bp03",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -51029,7 +54648,52 @@
       "camo08",
       "mrggrf01",
       "bp09",
-      "anniversary23"
+      "anniversary23",
+      "winter2502",
+      "25rating03",
+      "25summer06"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "ss04",
+      "ss06",
+      "ss02",
+      "ss01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr08_25rating03",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25rating03"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "ss04",
+      "ss06",
+      "ss02",
+      "ss01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr08_25summer06",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25summer06"
     ],
     "attachments": [
       "mount02",
@@ -51190,7 +54854,10 @@
       "camo08",
       "mrggrf01",
       "bp09",
-      "anniversary23"
+      "anniversary23",
+      "winter2502",
+      "25rating03",
+      "25summer06"
     ],
     "attachments": [
       "mount02",
@@ -51270,6 +54937,27 @@
     ]
   },
   {
+    "name": "sr08_winter2502",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "winter2502"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "ss04",
+      "ss06",
+      "ss02",
+      "ss01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "sr09",
     "category": "sr",
     "ammoType": "bullet_sr",
@@ -51279,16 +54967,99 @@
       "ec02",
       "lava01",
       "bp06",
-      "samurai02"
+      "samurai02",
+      "mvt25spring04",
+      "25spring04",
+      "25bp06shark",
+      "25rating06"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
       "ss01",
       "sr09_sp_d",
       "sr09_sc_d",
-      "sc02",
+      "sc06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "bp01",
+      "bp03",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr09_25bp06shark",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ss04",
+      "ss06",
+      "ss02",
+      "ss01",
+      "sr09_sp_d",
+      "sr09_sc_d",
+      "sc06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "bp01",
+      "bp03",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr09_25rating06",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25rating06"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ss04",
+      "ss06",
+      "ss02",
+      "ss01",
+      "sr09_sp_d",
+      "sr09_sc_d",
+      "sc06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "bp01",
+      "bp03",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr09_25spring04",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25spring04"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ss04",
+      "ss06",
+      "ss02",
+      "ss01",
+      "sr09_sp_d",
+      "sr09_sc_d",
       "sc06",
       "muzzle_flash_effect",
       "muzzle_flash_light",
@@ -51307,13 +55078,14 @@
       "bp06"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
       "ss01",
       "sr09_bp06_sp_d",
       "sr09_bp06_sc_d",
-      "sc02",
       "sc06",
       "muzzle_flash_effect",
       "muzzle_flash_light",
@@ -51332,6 +55104,8 @@
       "ec02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
@@ -51359,15 +55133,22 @@
       "ec02",
       "lava01",
       "bp06",
-      "samurai02"
+      "samurai02",
+      "mvt25spring04",
+      "25spring04",
+      "25bp06shark",
+      "25rating06"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
       "ss01",
       "sr09_sp_d",
       "sr09_sc_d",
+      "sc06",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "bp01",
@@ -51385,6 +55166,8 @@
       "lava01"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
@@ -51403,6 +55186,32 @@
     ]
   },
   {
+    "name": "sr09_mvt25spring04",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "mvt25spring04"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "ss04",
+      "ss06",
+      "ss02",
+      "ss01",
+      "sr09_sp_d",
+      "sr09_sc_d",
+      "sc06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "bp01",
+      "bp03",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "sr09_samurai02",
     "category": "sr",
     "ammoType": "bullet_sr",
@@ -51410,6 +55219,8 @@
       "samurai02"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04_dark01",
       "ss06_dark01",
       "ss02_dark01",
@@ -51435,13 +55246,14 @@
       "viet01"
     ],
     "attachments": [
+      "mount01",
+      "charm",
       "ss04",
       "ss06",
       "ss02",
       "ss01",
       "sr09_sp_d",
       "sr09_sc_d",
-      "sc02",
       "sc06",
       "muzzle_flash_effect",
       "muzzle_flash_light",
@@ -56762,6 +60574,30 @@
     ]
   },
   {
+    "name": "sr51_mvt23sales09",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "mvt23sales09"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "sr51_ss_d",
+      "ss04",
+      "ss06",
+      "ss01",
+      "sr51_sp01_d",
+      "sr51_sp02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "sr51_bp_d",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
     "name": "sr51_pollution2403",
     "category": "sr",
     "ammoType": "bullet_sr",
@@ -57932,7 +61768,8 @@
       "bone2309_01",
       "midgard2309",
       "winter2312_01",
-      "howl2312"
+      "howl2312",
+      "25bp06shark"
     ],
     "attachments": [
       "mount01",
@@ -57947,6 +61784,30 @@
       "muzzle_flash_light",
       "smoke_fx",
       "sr62_bone2309_01_sa01",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr62_25bp06shark",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "sr62_ss_d",
+      "ss04",
+      "ss02",
+      "sr62_bp_d",
+      "sr62_gp_d",
+      "sr62_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "smoke_fx",
       "perk_a",
       "perk_b",
       "perk_c"
@@ -58013,7 +61874,8 @@
       "bone2309_01",
       "midgard2309",
       "winter2312_01",
-      "howl2312"
+      "howl2312",
+      "25bp06shark"
     ],
     "attachments": [
       "mount01",
@@ -58367,7 +62229,9 @@
       "hlw23_01",
       "winter2312_02",
       "pollution2403",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25spring03",
+      "25pve06"
     ],
     "attachments": [
       "mount01",
@@ -58379,6 +62243,50 @@
       "sr64_mag02_d",
       "sr64_bone2309_01_sa01",
       "sr64_hlw23_01_sa01",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr64_25pve06",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25pve06"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "sr64_sp_d",
+      "sr64_sc_d",
+      "sr64_ss01_d",
+      "sr64_mag01_d",
+      "sr64_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr64_25spring03",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25spring03"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "sr64_sp_d",
+      "sr64_sc_d",
+      "sr64_ss01_d",
+      "sr64_mag01_d",
+      "sr64_mag02_d",
       "muzzle_flash_effect",
       "muzzle_flash_light",
       "perk_a",
@@ -58444,7 +62352,9 @@
       "hlw23_01",
       "winter2312_02",
       "pollution2403",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25spring03",
+      "25pve06"
     ],
     "attachments": [
       "mount01",
@@ -58587,7 +62497,30 @@
       "sales2401",
       "winter2402_02",
       "biohazard2403",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "sr65_ss_d",
+      "sr65_sp_d",
+      "sr65_sc_d",
+      "sr65_bp_d",
+      "sr65_gp_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr65_25bp03pinup",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "mount01",
@@ -58661,7 +62594,8 @@
       "sales2401",
       "winter2402_02",
       "biohazard2403",
-      "bandarlog2406"
+      "bandarlog2406",
+      "25bp03pinup"
     ],
     "attachments": [
       "mount01",
@@ -58803,7 +62737,30 @@
       "summer24",
       "inx24olymp",
       "thunder2409",
-      "bf24"
+      "bf24",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount04",
+      "charm",
+      "sr66_ss_d",
+      "sr66_gp_d",
+      "sr66_bp_d",
+      "sr66_sp_d",
+      "sr66_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr66_25bp03pinup",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25bp03pinup"
     ],
     "attachments": [
       "mount04",
@@ -58879,7 +62836,30 @@
       "summer24",
       "inx24olymp",
       "thunder2409",
-      "bf24"
+      "bf24",
+      "25bp03pinup"
+    ],
+    "attachments": [
+      "mount04",
+      "charm",
+      "sr66_ss_d",
+      "sr66_gp_d",
+      "sr66_bp_d",
+      "sr66_sp_d",
+      "sr66_sc_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr66_mvt24anniversary",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "mvt24anniversary"
     ],
     "attachments": [
       "mount04",
@@ -58996,7 +62976,58 @@
       "coil2409",
       "hlw24",
       "rat2412",
-      "winter2412"
+      "winter2412",
+      "mvt25victory05",
+      "25spring05",
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "sr67_sp_d",
+      "sr67_sc_d",
+      "sr67_gp_d",
+      "sr67_ss01_d",
+      "sr67_ss02_d",
+      "sr67_mag01_d",
+      "sr67_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr67_25bp06shark",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25bp06shark"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "sr67_sp_d",
+      "sr67_sc_d",
+      "sr67_gp_d",
+      "sr67_ss01_d",
+      "sr67_ss02_d",
+      "sr67_mag01_d",
+      "sr67_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr67_25spring05",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25spring05"
     ],
     "attachments": [
       "mount02",
@@ -59075,7 +63106,10 @@
       "coil2409",
       "hlw24",
       "rat2412",
-      "winter2412"
+      "winter2412",
+      "mvt25victory05",
+      "25spring05",
+      "25bp06shark"
     ],
     "attachments": [
       "mount02",
@@ -59100,6 +63134,54 @@
     "ammoType": "bullet_sr",
     "skins": [
       "hlw24"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "sr67_sp_d",
+      "sr67_sc_d",
+      "sr67_gp_d",
+      "sr67_ss01_d",
+      "sr67_ss02_d",
+      "sr67_mag01_d",
+      "sr67_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr67_mvt24summer",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "mvt24summer"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "sr67_sp_d",
+      "sr67_sc_d",
+      "sr67_gp_d",
+      "sr67_ss01_d",
+      "sr67_ss02_d",
+      "sr67_mag01_d",
+      "sr67_mag02_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr67_mvt25victory05",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "mvt25victory05"
     ],
     "attachments": [
       "mount02",
@@ -59265,32 +63347,206 @@
     ]
   },
   {
-    "name": "stg01",
-    "category": "stg",
-    "ammoType": "bullet_sticky",
+    "name": "sr69",
+    "category": "sr",
+    "ammoType": "bullet_sr",
     "skins": [
-      "bullet_sticky_mastery01_skin",
-      "bullet_sticky_mvt24summer_skin",
-      "bullet_sticky_coil2409_skin",
-      "bullet_sticky_mvt24operator11_skin",
-      "bullet_sticky_underground2412_skin",
-      "bullet_sticky_winter2412_skin"
+      "default",
+      "grind01",
+      "25na03bope",
+      "25summer07"
     ],
     "attachments": [
+      "mount02",
+      "charm",
+      "sr69_sp_d",
+      "sr69_sc_d",
+      "sp04",
+      "sc02",
+      "sc06",
+      "sr69_ss_d",
+      "sr69_as_d",
+      "ss01",
+      "ss02",
+      "ss04",
+      "ss06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
       "perk_a",
-      "perk_b"
+      "perk_b",
+      "perk_c"
     ]
   },
   {
-    "name": "tm01",
-    "category": "tm",
-    "ammoType": "bullet_tm01",
+    "name": "sr69_25na03bope",
+    "category": "sr",
+    "ammoType": "bullet_sr",
     "skins": [
-      "bullet_tm01_mastery01_skin"
+      "25na03bope"
     ],
     "attachments": [
+      "mount02",
+      "charm",
+      "sr69_sp_d",
+      "sr69_sc_d",
+      "sp04",
+      "sc02",
+      "sc06",
+      "sr69_ss_d",
+      "sr69_as_d",
+      "ss01",
+      "ss02",
+      "ss04",
+      "ss06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
       "perk_a",
-      "perk_b"
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr69_25summer07",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25summer07"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "sr69_sp_d",
+      "sr69_sc_d",
+      "sp04",
+      "sc02",
+      "sc06",
+      "sr69_ss_d",
+      "sr69_as_d",
+      "ss01",
+      "ss02",
+      "ss04",
+      "ss06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr69_gold01",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "gold01",
+      "grind01",
+      "25na03bope",
+      "25summer07"
+    ],
+    "attachments": [
+      "mount02",
+      "charm",
+      "sr69_sp_d",
+      "sr69_sc_d",
+      "sp04",
+      "sc02",
+      "sc06",
+      "sr69_ss_d",
+      "sr69_as_d",
+      "ss01",
+      "ss02",
+      "ss04",
+      "ss06",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr70",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "default",
+      "grind01",
+      "25na07warland"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "sr70_sp01_d",
+      "sr70_sp02_d",
+      "sr70_ss_d",
+      "ss01",
+      "ss02",
+      "ss04",
+      "ss06",
+      "sr70_rds_d",
+      "sr70_gp_d",
+      "sr70_bp_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr70_25na07warland",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "25na07warland"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "sr70_sp01_d",
+      "sr70_sp02_d",
+      "sr70_ss_d",
+      "ss01",
+      "ss02",
+      "ss04",
+      "ss06",
+      "sr70_rds_d",
+      "sr70_gp_d",
+      "sr70_bp_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
+    ]
+  },
+  {
+    "name": "sr70_gold01",
+    "category": "sr",
+    "ammoType": "bullet_sr",
+    "skins": [
+      "gold01",
+      "grind01",
+      "25na07warland"
+    ],
+    "attachments": [
+      "mount01",
+      "charm",
+      "sr70_sp01_d",
+      "sr70_sp02_d",
+      "sr70_ss_d",
+      "ss01",
+      "ss02",
+      "ss04",
+      "ss06",
+      "sr70_rds_d",
+      "sr70_gp_d",
+      "sr70_bp_d",
+      "muzzle_flash_effect",
+      "muzzle_flash_light",
+      "perk_a",
+      "perk_b",
+      "perk_c"
     ]
   },
   {
@@ -59299,24 +63555,6 @@
     "ammoType": "sensor02",
     "skins": [],
     "attachments": []
-  },
-  {
-    "name": "tw01",
-    "category": "tw",
-    "ammoType": "bullet_tw01",
-    "skins": [
-      "bullet_tw01_north2312_skin",
-      "bullet_tw01_cny24_skin",
-      "bullet_tw01_biohazard2403_skin",
-      "bullet_tw01_reptile2406_skin",
-      "bullet_tw01_thunder2409_skin",
-      "bullet_tw01_coil2409_skin",
-      "bullet_tw01_winter2412_skin"
-    ],
-    "attachments": [
-      "perk_a",
-      "perk_b"
-    ]
   },
   {
     "name": "tw01_teamgungame",
