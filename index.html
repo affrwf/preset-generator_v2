@@ -454,15 +454,14 @@ window.addEventListener('load', async () => {
     document.getElementById('downloadBtn').addEventListener('click', () => {
       const text = document.getElementById('resultArea').value;
       if (!text) return;
-      // локализованное имя внешности
-      const appearanceName = localizationMap[selectedAppearance] || selectedAppearance || 'preset';
-      // локализованное имя первой выбранной пушки
-      let weaponName = 'weapon';
+
+      // используем рабочие английские названия
+      const appearanceId = selectedAppearance || 'preset';
+      let weaponId = 'weapon';
       if (selectedWeapons.length > 0) {
-        const first = selectedWeapons[0];
-        weaponName = localizationMap[first.originalName] || first.originalName;
+        weaponId = selectedWeapons[0].originalName;
       }
-      const fileName = `${appearanceName} + ${weaponName}.lua`;
+      const fileName = `${appearanceId}_${weaponId}.lua`;
       const blob = new Blob([text], {type: 'text/plain'});
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
