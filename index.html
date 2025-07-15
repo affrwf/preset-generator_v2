@@ -207,6 +207,16 @@
     .random-buttons button:hover {
       background: #138496;
     }
+    .random-buttons .btn-col {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 6px;
+    }
+    .btn-meta {
+      background: #ff9800;
+      color: #fff;
+    }
     .selectedWeaponItem button {
       margin-left: 8px;
       background: #dc3545;
@@ -328,10 +338,22 @@
       </div>
 
       <div class="random-buttons">
-        <button id="randomR">Штурмовик</button>
-        <button id="randomM">Медик</button>
-        <button id="randomE">Инженер</button>
-        <button id="randomS">Снайпер</button>
+        <div class="btn-col">
+          <button id="randomR">Штурмовик</button>
+          <button id="metaR" class="btn-meta">Мета</button>
+        </div>
+        <div class="btn-col">
+          <button id="randomM">Медик</button>
+          <button id="metaM" class="btn-meta">Мета</button>
+        </div>
+        <div class="btn-col">
+          <button id="randomE">Инженер</button>
+          <button id="metaE" class="btn-meta">Мета</button>
+        </div>
+        <div class="btn-col">
+          <button id="randomS">Снайпер</button>
+          <button id="metaS" class="btn-meta">Мета</button>
+        </div>
       </div>
     </div>
   </div>
@@ -410,6 +432,21 @@ let filteredWeapons = [];
 let selectedWeapons = [];
 let selectedAppearance = ''; // хранит name выбранной внешности
 
+const metaWeapons = {
+  R: [
+    'ar11','ar43','ar23','mg30','ar60','ar35','ar62','ar61','ar27','ar59','ar12'
+  ],
+  M: [
+    'shg40','shg75','shg74','shg73','shg71','shg50','shg05','shg55','shg07','shg59','shg72','shg13'
+  ],
+  E: [
+    'smg76','smg75','smg74','smg72','smg71','smg38','smg53','smg33','smg31','smg10'
+  ],
+  S: [
+    'sr08','sr70','sr62','sr69','sr09','sr68','sr67','sr66','sr65','sr04','sr31'
+  ]
+};
+
 let currentPage = 1;
 const itemsPerPage = 20;
 
@@ -437,6 +474,12 @@ window.addEventListener('load', async () => {
     document.getElementById('randomM').addEventListener('click', () => generateRandomPreset('M'));
     document.getElementById('randomE').addEventListener('click', () => generateRandomPreset('E'));
     document.getElementById('randomS').addEventListener('click', () => generateRandomPreset('S'));
+
+    // Слушатели на кнопки "Мета"
+    document.getElementById('metaR').addEventListener('click', () => generateMetaPreset('R'));
+    document.getElementById('metaM').addEventListener('click', () => generateMetaPreset('M'));
+    document.getElementById('metaE').addEventListener('click', () => generateMetaPreset('E'));
+    document.getElementById('metaS').addEventListener('click', () => generateMetaPreset('S'));
 
     // Поиск по оружию
     document.getElementById('searchInput').addEventListener('input', onWeaponSearch);
@@ -867,6 +910,50 @@ function generateRandomPreset(classChar) {
   }
 
   // Перерисовываем и генерим
+  renderSelectedWeapons();
+  doGenerate();
+}
+
+function generateMetaPreset(classChar) {
+  selectedWeapons = [];
+  selectedAppearance = '';
+
+  const allowedNames = metaWeapons[classChar] || [];
+  const mainCandidates = weaponsData.filter(w => allowedNames.includes(w.name));
+  const mainWeapon = randomItem(mainCandidates);
+  if (mainWeapon) {
+    addSelectedWeapon(mainWeapon);
+    setRandomSkinForLast();
+  }
+
+  const pistolList = weaponsData.filter(w => w.category === 'pt');
+  const pistol = randomItem(pistolList);
+  if (pistol) {
+    addSelectedWeapon(pistol);
+    setRandomSkinForLast();
+  }
+
+  const knifeList = weaponsData.filter(w => w.category === 'kn');
+  const knife = randomItem(knifeList);
+  if (knife) {
+    addSelectedWeapon(knife);
+    setRandomSkinForLast();
+  }
+
+  const skinCandidates = skinsData.filter(sk => {
+    if (!sk.classes) return false;
+    if (sk.classes === 'MERS') return false;
+    return sk.classes.includes(classChar);
+  });
+  const randomSkin = randomItem(skinCandidates);
+  if (randomSkin) {
+    selectedAppearance = randomSkin.name;
+    const locName = localizationMap[randomSkin.name] || randomSkin.name;
+    document.getElementById('appearanceSearch').value = locName;
+    document.getElementById('appearanceSelected').innerHTML =
+      `Текущая внешность: <span>${locName}</span>`;
+  }
+
   renderSelectedWeapons();
   doGenerate();
 }
