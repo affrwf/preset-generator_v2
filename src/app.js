@@ -1,5 +1,5 @@
 import {loadCatalog} from './catalog.js';
-import {CLASS_NAMES,CATEGORY_NAMES,SOCKET_NAMES,activeSockets,compatible,cleanSearch,emptyPreset,selection,addWeapon,generateLua,errorsForPreset,validateImport,randomPreset} from './core.js';
+import {CLASS_NAMES,CATEGORY_NAMES,SOCKET_NAMES,activeSockets,compatible,classAppearance,cleanSearch,emptyPreset,selection,addWeapon,generateLua,errorsForPreset,validateImport,randomPreset} from './core.js';
 const $=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let catalog,preset,weaponIndex,appearanceIndex,armorIndex;
@@ -20,7 +20,7 @@ function available(){
   const query=cleanSearch($('searchInput').value),category=$('categoryFilter').value;
   const terms=query.split(/\s+/).filter(Boolean);
   return catalog[tab].filter(row=>{
-    if(!compatible(row,preset.classId)||row.internal)return false;
+    if(row.internal||(tab==='appearances'?!classAppearance(row,preset.classId):!compatible(row,preset.classId)))return false;
     if(tab==='armor'&&catalog.heads.includes(row.id))return false;
     if(tab==='weapons'){
       if(!$('showVariants').checked&&row.variant)return false;
@@ -92,8 +92,15 @@ function changeClass(cls){
   preset.classId=cls;
   preset.items=preset.items.filter(i=>compatible(weaponIndex.get(i.id),cls));
   preset.armor=preset.armor.filter(id=>compatible(armorIndex.get(id),cls));
-  if(preset.appearance&&!compatible(appearanceIndex.get(preset.appearance),cls))preset.appearance='';
+  if(preset.appearance&&!classAppearance(appearanceIndex.get(preset.appearance),cls))preset.appearance='';
   syncClass();resetList();changed();
+}
+function presetFileName(){
+  const main=preset.items.find(item=>weaponIndex.get(item.id)?.slot==='primary')||preset.items[0];
+  const weaponId=main?.id||'no_weapon';
+  const appearanceId=preset.appearance||'no_appearance';
+  const id=value=>String(value).toLowerCase().replace(/[^a-z0-9_]+/g,'_').replace(/^_+|_+$/g,'');
+  return id(weaponId)+'_'+id(appearanceId)+'.lua';
 }
 function download(name,text,type){
   const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');
@@ -176,7 +183,7 @@ function attachEvents(){
     try{await navigator.clipboard.writeText($('resultArea').value);toast('Lua скопирован');}
     catch{$('resultArea').focus();$('resultArea').select();toast('Выделено. Нажми Ctrl+C, чтобы скопировать.');}
   });
-  $('downloadBtn').addEventListener('click',()=>download('warface_'+catalog.build+'_'+preset.classId+'.lua',$('resultArea').value,'text/plain;charset=utf-8'));
+  $('downloadBtn').addEventListener('click',()=>download(presetFileName(),$('resultArea').value,'text/plain;charset=utf-8'));
   $('saveBtn').addEventListener('click',()=>download('warface_'+catalog.build+'_'+preset.classId+'.json',JSON.stringify(preset,null,2),'application/json'));
   $('importBtn').addEventListener('click',()=>$('importFile').click());
   $('importFile').addEventListener('change',async e=>{

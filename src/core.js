@@ -3,7 +3,8 @@ export const CATEGORY_NAMES={ar:'Автоматы',arl:'Автоматы',mg:'П
 export const SOCKET_NAMES={scope:'Прицел',additionalscope:'Дополнительный прицел',muzzle:'Дульный модуль',grenadelauncher:'Подствольный модуль',underbarrel:'Подствольный модуль',bipod:'Сошки',magazine:'Магазин',butt:'Приклад',barrel:'Ствол'};
 export const TIER_ORDER=['S','A','B','C','D'];
 export const activeSockets=(weapon,item)=>weapon.sockets.filter(s=>!s.skins||s.skins.includes(item.skin));
-export const compatible=(row,cls)=>row.classes.includes(cls);
+export const compatible=(row,cls)=>Boolean(row?.classes?.includes(cls));
+export const classAppearance=(row,cls)=>Boolean(row&&!row.internal&&row.classes===cls);
 export const pick=(list,rng=Math.random)=>list.length?list[Math.min(list.length-1,Math.floor(rng()*list.length))]:null;
 export const cleanSearch=value=>String(value??'').toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/[«»"'’]/g,'').normalize('NFKC').trim();
 export function emptyPreset(catalog,cls='R'){
@@ -30,7 +31,7 @@ export function errorsForPreset(p,c){
   if(!CLASS_NAMES[p.classId])errors.push('Неизвестный класс.');
   if(!Number.isInteger(p.ammoAmount)||p.ammoAmount<0||p.ammoAmount>999999)errors.push('Боезапас должен быть целым числом от 0 до 999999.');
   if(p.head&&!c.heads.includes(p.head))errors.push('Неизвестная голова.');
-  if(p.appearance&&!c.appearances.some(a=>a.id===p.appearance&&compatible(a,p.classId)))errors.push('Облик недоступен этому классу.');
+  if(p.appearance&&!c.appearances.some(a=>a.id===p.appearance&&classAppearance(a,p.classId)))errors.push('Облик недоступен этому классу.');
   const armorSlots=new Set();
   for(const id of p.armor||[]){
     const a=c.armor.find(a=>a.id===id);
@@ -92,7 +93,7 @@ export function randomPreset(c,cls,{tier=null,min={},max={},randomSkins=true}={}
     if(randomSkins&&w.skins.length)item.skin=pick(w.skins,rng).id;
     p.items.push(item);
   }
-  p.appearance=pick(c.appearances.filter(a=>!a.internal&&compatible(a,cls)),rng)?.id||'';
+  p.appearance=pick(c.appearances.filter(a=>classAppearance(a,cls)),rng)?.id||'';
   p.head=pick(c.heads,rng)||'';
   return p;
 }
