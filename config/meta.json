@@ -1,0 +1,719 @@
+{
+  "R": [
+    {
+      "title": "FX-05",
+      "ids": [
+        "ar65"
+      ],
+      "tier": "S",
+      "score": 7.45
+    },
+    {
+      "title": "QBZ-191",
+      "ids": [
+        "ar60"
+      ],
+      "tier": "S",
+      "score": 7.19
+    },
+    {
+      "title": "SARB-15 JAKL",
+      "ids": [
+        "ar64"
+      ],
+      "tier": "A",
+      "score": 6.94
+    },
+    {
+      "title": "А-545",
+      "ids": [
+        "ar62"
+      ],
+      "tier": "A",
+      "score": 6.48
+    },
+    {
+      "title": "ПКМ «Зенит»",
+      "ids": [
+        "mg29"
+      ],
+      "tier": "A",
+      "score": 6.2
+    },
+    {
+      "title": "АШ-12",
+      "ids": [
+        "ar63"
+      ],
+      "tier": "A",
+      "score": 6.04
+    },
+    {
+      "title": "MPAR-556",
+      "ids": [
+        "ar61"
+      ],
+      "tier": "B",
+      "score": 5.9
+    },
+    {
+      "title": "Type 97 / 97B",
+      "ids": [
+        "ar16",
+        "ar15"
+      ],
+      "tier": "B",
+      "score": 5.73
+    },
+    {
+      "title": "MSBS Radon",
+      "ids": [
+        "ar26"
+      ],
+      "tier": "B",
+      "score": 5.62
+    },
+    {
+      "title": "SA Hellion",
+      "ids": [
+        "ar57"
+      ],
+      "tier": "B",
+      "score": 5.56
+    },
+    {
+      "title": "АК-15 Custom",
+      "ids": [
+        "ar46"
+      ],
+      "tier": "B",
+      "score": 5.49
+    },
+    {
+      "title": "HK433",
+      "ids": [
+        "ar58"
+      ],
+      "tier": "B",
+      "score": 5.45
+    },
+    {
+      "title": "АК-12",
+      "ids": [
+        "ar35"
+      ],
+      "tier": "B",
+      "score": 5.25
+    },
+    {
+      "title": "FN Evolys",
+      "ids": [
+        "mg31"
+      ],
+      "tier": "B",
+      "score": 5.22
+    },
+    {
+      "title": "АС «Вал» / Custom",
+      "ids": [
+        "ar23",
+        "ar51"
+      ],
+      "tier": "B",
+      "score": 5.14
+    },
+    {
+      "title": "HArms CQR",
+      "ids": [
+        "ar32"
+      ],
+      "tier": "C",
+      "score": 4.96
+    },
+    {
+      "title": "FN SCAR-H",
+      "ids": [
+        "ar11"
+      ],
+      "tier": "C",
+      "score": 4.93
+    },
+    {
+      "title": "Корд-5.45",
+      "ids": [
+        "mg30"
+      ],
+      "tier": "C",
+      "score": 4.87
+    },
+    {
+      "title": "Beretta ARX160",
+      "ids": [
+        "ar27"
+      ],
+      "tier": "C",
+      "score": 4.82
+    },
+    {
+      "title": "M249 Para",
+      "ids": [
+        "mg07"
+      ],
+      "tier": "C",
+      "score": 4.7
+    },
+    {
+      "title": "АН-94 «Абакан»",
+      "ids": [
+        "ar43"
+      ],
+      "tier": "C",
+      "score": 4.38
+    },
+    {
+      "title": "M16A3 Custom",
+      "ids": [
+        "ar12"
+      ],
+      "tier": "C",
+      "score": 4.38
+    },
+    {
+      "title": "АК «Альфа»",
+      "ids": [
+        "ar29"
+      ],
+      "tier": "C",
+      "score": 4.15
+    },
+    {
+      "title": "STK CMCR",
+      "ids": [
+        "ar59"
+      ],
+      "tier": "C",
+      "score": 4.06
+    }
+  ],
+  "M": [
+    {
+      "title": "Stoeger Double Defence",
+      "ids": [
+        "shg79"
+      ],
+      "tier": "S",
+      "score": 7.99
+    },
+    {
+      "title": "КС-23",
+      "ids": [
+        "shg78"
+      ],
+      "tier": "S",
+      "score": 7.32
+    },
+    {
+      "title": "PA EG240",
+      "ids": [
+        "shg76"
+      ],
+      "tier": "A",
+      "score": 6.97
+    },
+    {
+      "title": "MAG-7",
+      "ids": [
+        "shg40"
+      ],
+      "tier": "A",
+      "score": 6.75
+    },
+    {
+      "title": "Browning Cynergy CX",
+      "ids": [
+        "shg72"
+      ],
+      "tier": "A",
+      "score": 6.14
+    },
+    {
+      "title": "PA Garibaldi 12GA",
+      "ids": [
+        "shg71"
+      ],
+      "tier": "A",
+      "score": 6.13
+    },
+    {
+      "title": "Kel-Tec KSG",
+      "ids": [
+        "shg13"
+      ],
+      "tier": "A",
+      "score": 6.04
+    },
+    {
+      "title": "Kral Arms Compact",
+      "ids": [
+        "shg75"
+      ],
+      "tier": "B",
+      "score": 5.99
+    },
+    {
+      "title": "Panzer Arms BP-12",
+      "ids": [
+        "shg73"
+      ],
+      "tier": "B",
+      "score": 5.83
+    },
+    {
+      "title": "Winchester 1887",
+      "ids": [
+        "shg44"
+      ],
+      "tier": "B",
+      "score": 5.56
+    },
+    {
+      "title": "Federation SPM-12",
+      "ids": [
+        "shg77"
+      ],
+      "tier": "B",
+      "score": 5.54
+    },
+    {
+      "title": "Winchester SXP",
+      "ids": [
+        "shg74"
+      ],
+      "tier": "B",
+      "score": 5.44
+    },
+    {
+      "title": "Marlin 1894 Custom",
+      "ids": [
+        "shg50"
+      ],
+      "tier": "B",
+      "score": 5.26
+    },
+    {
+      "title": "Калашников MP-155 Ultima",
+      "ids": [
+        "shg59"
+      ],
+      "tier": "B",
+      "score": 5.17
+    },
+    {
+      "title": "Chiappa Triple Threat",
+      "ids": [
+        "shg55"
+      ],
+      "tier": "B",
+      "score": 5.04
+    },
+    {
+      "title": "USAS-12",
+      "ids": [
+        "shg05"
+      ],
+      "tier": "C",
+      "score": 4.56
+    },
+    {
+      "title": "Benelli M4 Custom",
+      "ids": [
+        "shg56"
+      ],
+      "tier": "C",
+      "score": 4.4
+    },
+    {
+      "title": "Cobray Striker / Special",
+      "ids": [
+        "shg11",
+        "shg60"
+      ],
+      "tier": "C",
+      "score": 4.38
+    },
+    {
+      "title": "Сайга-12С",
+      "ids": [
+        "shg07"
+      ],
+      "tier": "C",
+      "score": 4.24
+    },
+    {
+      "title": "Kalashnikov USA Komrad 12",
+      "ids": [
+        "shg58"
+      ],
+      "tier": "D",
+      "score": 3.99
+    },
+    {
+      "title": "Typhoon F12",
+      "ids": [
+        "shg51"
+      ],
+      "tier": "D",
+      "score": 3.72
+    }
+  ],
+  "E": [
+    {
+      "title": "ППК-20",
+      "ids": [
+        "smg78"
+      ],
+      "tier": "S",
+      "score": 8.02
+    },
+    {
+      "title": "CSV-9",
+      "ids": [
+        "smg73"
+      ],
+      "tier": "S",
+      "score": 7.79
+    },
+    {
+      "title": "XM8 Compact",
+      "ids": [
+        "smg08"
+      ],
+      "tier": "S",
+      "score": 7.19
+    },
+    {
+      "title": "ПП-2011 «Кедр-Para»",
+      "ids": [
+        "smg71"
+      ],
+      "tier": "A",
+      "score": 6.93
+    },
+    {
+      "title": "SI PS90",
+      "ids": [
+        "smg79"
+      ],
+      "tier": "A",
+      "score": 6.62
+    },
+    {
+      "title": "ПП-19-01 «Витязь»",
+      "ids": [
+        "smg54"
+      ],
+      "tier": "A",
+      "score": 6.47
+    },
+    {
+      "title": "FAMAE SAF-200",
+      "ids": [
+        "smg74"
+      ],
+      "tier": "A",
+      "score": 6.18
+    },
+    {
+      "title": "SIG MPX SBR Custom",
+      "ids": [
+        "smg46"
+      ],
+      "tier": "B",
+      "score": 5.97
+    },
+    {
+      "title": "CZ Scorpion Evo3 A1",
+      "ids": [
+        "smg38"
+      ],
+      "tier": "B",
+      "score": 5.77
+    },
+    {
+      "title": "АМБ-17",
+      "ids": [
+        "smg53"
+      ],
+      "tier": "B",
+      "score": 5.59
+    },
+    {
+      "title": "Magpul FMG-9",
+      "ids": [
+        "smg36"
+      ],
+      "tier": "B",
+      "score": 5.47
+    },
+    {
+      "title": "Taurus CT9 G2",
+      "ids": [
+        "smg69"
+      ],
+      "tier": "B",
+      "score": 5.44
+    },
+    {
+      "title": "SIG MPX Copperhead",
+      "ids": [
+        "smg67"
+      ],
+      "tier": "B",
+      "score": 5.31
+    },
+    {
+      "title": "Honey Badger",
+      "ids": [
+        "smg33"
+      ],
+      "tier": "B",
+      "score": 5.27
+    },
+    {
+      "title": "Beretta PMX",
+      "ids": [
+        "smg70"
+      ],
+      "tier": "B",
+      "score": 5.11
+    },
+    {
+      "title": "FN SCAR-L PDW",
+      "ids": [
+        "smg31"
+      ],
+      "tier": "B",
+      "score": 5.01
+    },
+    {
+      "title": "ППШ-41 Modern",
+      "ids": [
+        "smg76"
+      ],
+      "tier": "C",
+      "score": 4.85
+    },
+    {
+      "title": "SR-3M «Вихрь»",
+      "ids": [
+        "smg75"
+      ],
+      "tier": "C",
+      "score": 4.74
+    },
+    {
+      "title": "Magpul PDR-C",
+      "ids": [
+        "smg72"
+      ],
+      "tier": "C",
+      "score": 4.61
+    },
+    {
+      "title": "Micro-Roni",
+      "ids": [
+        "smg43"
+      ],
+      "tier": "C",
+      "score": 4.43
+    },
+    {
+      "title": "Kriss Super V Custom",
+      "ids": [
+        "smg44"
+      ],
+      "tier": "C",
+      "score": 4.4
+    },
+    {
+      "title": "Tavor CTAR-21 / Special",
+      "ids": [
+        "smg10",
+        "smg00003"
+      ],
+      "tier": "C",
+      "score": 4.37
+    }
+  ],
+  "S": [
+    {
+      "title": "Browning Safari",
+      "ids": [
+        "sr72"
+      ],
+      "tier": "S",
+      "score": 7.85
+    },
+    {
+      "title": "PGM Ultima Ratio",
+      "ids": [
+        "sr68"
+      ],
+      "tier": "S",
+      "score": 7.03
+    },
+    {
+      "title": "Bushmaster BA50",
+      "ids": [
+        "sr42"
+      ],
+      "tier": "A",
+      "score": 6.88
+    },
+    {
+      "title": "Sabatti STR",
+      "ids": [
+        "sr65"
+      ],
+      "tier": "A",
+      "score": 6.66
+    },
+    {
+      "title": "СВ-98",
+      "ids": [
+        "sr48"
+      ],
+      "tier": "A",
+      "score": 6.33
+    },
+    {
+      "title": "Steyr Scout / Special",
+      "ids": [
+        "sr34",
+        "sr00002"
+      ],
+      "tier": "A",
+      "score": 6.22
+    },
+    {
+      "title": "Bergara MG",
+      "ids": [
+        "sr71"
+      ],
+      "tier": "A",
+      "score": 6.19
+    },
+    {
+      "title": "ОЦ-48К МК2",
+      "ids": [
+        "sr62"
+      ],
+      "tier": "A",
+      "score": 6.09
+    },
+    {
+      "title": "СВЧ-54",
+      "ids": [
+        "sr64"
+      ],
+      "tier": "A",
+      "score": 6.07
+    },
+    {
+      "title": "Mauser Kar98K",
+      "ids": [
+        "sr54"
+      ],
+      "tier": "B",
+      "score": 5.99
+    },
+    {
+      "title": "МЦ-572 «Астарта»",
+      "ids": [
+        "sr66"
+      ],
+      "tier": "B",
+      "score": 5.88
+    },
+    {
+      "title": "CheyTac M200",
+      "ids": [
+        "sr08"
+      ],
+      "tier": "B",
+      "score": 5.86
+    },
+    {
+      "title": "ATA Arms Turqua",
+      "ids": [
+        "sr69"
+      ],
+      "tier": "B",
+      "score": 5.5
+    },
+    {
+      "title": "McMillan CS5",
+      "ids": [
+        "sr09"
+      ],
+      "tier": "B",
+      "score": 5.34
+    },
+    {
+      "title": "H&K G210",
+      "ids": [
+        "sr73"
+      ],
+      "tier": "B",
+      "score": 5.3
+    },
+    {
+      "title": "M14 Crazy Horse",
+      "ids": [
+        "sr38"
+      ],
+      "tier": "C",
+      "score": 4.83
+    },
+    {
+      "title": "CDX-MC Kraken",
+      "ids": [
+        "sr46"
+      ],
+      "tier": "C",
+      "score": 4.78
+    },
+    {
+      "title": "AS50",
+      "ids": [
+        "sr04"
+      ],
+      "tier": "C",
+      "score": 4.69
+    },
+    {
+      "title": "FN SCAR Creedmoor",
+      "ids": [
+        "sr70"
+      ],
+      "tier": "C",
+      "score": 4.55
+    },
+    {
+      "title": "СКС FAB",
+      "ids": [
+        "sr67"
+      ],
+      "tier": "C",
+      "score": 4.28
+    },
+    {
+      "title": "Benelli MR1",
+      "ids": [
+        "sr59"
+      ],
+      "tier": "C",
+      "score": 4.1
+    }
+  ]
+}
