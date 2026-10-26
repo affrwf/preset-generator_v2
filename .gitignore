@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+*.pyc
+_site/
+.venv/
+.DS_Store
+
+assets/icons/
+data/all_weapons.json
+data/all_skins.json

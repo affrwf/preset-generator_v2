@@ -1,0 +1,1 @@
+{"name":"warface-preset-generator","version":"3.0.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.js","check":"node --check src/app.js","parse":"python parse_client.py","preview":"python -m http.server 8766 --bind 127.0.0.1"},"engines":{"node":">=20"}}
