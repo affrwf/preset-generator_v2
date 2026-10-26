@@ -97,13 +97,10 @@ function changeClass(cls){
 }
 function presetFileName(){
   const main=preset.items.find(item=>weaponIndex.get(item.id)?.slot==='primary')||preset.items[0];
-  const weapon=main?weaponIndex.get(main.id):null;
-  const appearance=appearanceIndex.get(preset.appearance);
-  const clean=value=>String(value||'').replace(/[<>:"/\\|?*\x00-\x1f]/g,'').replace(/[. ]+$/g,'').trim().slice(0,75);
-  const weaponName=clean(weapon?.title)||'Без оружия';
-  const appearanceName=clean(appearance?.title)||'Без облика';
-  const unique=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8);
-  return weaponName+' - '+appearanceName+' - '+unique+'.lua';
+  const weaponId=main?.id||'no_weapon';
+  const appearanceId=preset.appearance||'no_appearance';
+  const id=value=>String(value).toLowerCase().replace(/[^a-z0-9_]+/g,'_').replace(/^_+|_+$/g,'');
+  return id(weaponId)+'_'+id(appearanceId)+'.lua';
 }
 function download(name,text,type){
   const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');
